@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnR2xvdyIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNjAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFjMTUwMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImdvbGRDZW50ZXIiIGN4PSI0MCUiIGN5PSIzNSUiIHI9IjYwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmN2UwODAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNjOWE4NGMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjN2E1YzE4Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJnb2xkUmluZyIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNTAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U4Yzk2YSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5YTc1MzAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdvbGRIIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y1ZDg3MCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2M5YTg0YyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3YTVjMTgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdvbGRWIiB4MT0iMTAwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkZDA2MCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2IwODgyOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1YzNlMGEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8ZmlsdGVyIGlkPSJnbG93Ij4KICAgICAgPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNSIgcmVzdWx0PSJibHVyIi8+CiAgICAgIDxmZUNvbXBvc2l0ZSBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJibHVyIiBvcGVyYXRvcj0ib3ZlciIvPgogICAgPC9maWx0ZXI+CiAgICA8ZmlsdGVyIGlkPSJzbSI+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjIuNSIgcmVzdWx0PSJibHVyIi8+CiAgICAgIDxmZUNvbXBvc2l0ZSBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJibHVyIiBvcGVyYXRvcj0ib3ZlciIvPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgoKICA8IS0tIEJhY2tncm91bmQgcm91bmRlZCBzcXVhcmUgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIHJ5PSIxMTIiIGZpbGw9InVybCgjYmdHbG93KSIvPgoKICA8IS0tIFN1YnRsZSB3YXJtIGNlbnRlciBnbG93IC0tPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjAwIiBmaWxsPSJyZ2JhKDIwMSwxNjgsNzYsMC4wNCkiLz4KCiAgPCEtLSBPdXRlciBib3JkZXIgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIHJ5PSIxMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2M5YTg0YyIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjE4Ii8+CgogIDwhLS0gT3V0ZXIgdGhpbiBjaXJjbGUgLS0+CiAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSIyMTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2M5YTg0YyIgc3Ryb2tlLXdpZHRoPSIxIiBvcGFjaXR5PSIwLjI1Ii8+CgogIDwhLS0gOCB0aWNrIG1hcmtzIGFyb3VuZCBvdXRlciByaW5nIC0tPgogIDxnIHN0cm9rZT0iI2M5YTg0YyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNiIgZmlsdGVyPSJ1cmwoI3NtKSI+CiAgICA8bGluZSB4MT0iMjU2IiB5MT0iNDEiICB4Mj0iMjU2IiB5Mj0iNjIiLz4KICAgIDxsaW5lIHgxPSIyNTYiIHkxPSI0NTAiIHgyPSIyNTYiIHkyPSI0NzEiLz4KICAgIDxsaW5lIHgxPSI0MSIgIHkxPSIyNTYiIHgyPSI2MiIgIHkyPSIyNTYiLz4KICAgIDxsaW5lIHgxPSI0NTAiIHkxPSIyNTYiIHgyPSI0NzEiIHkyPSIyNTYiLz4KICAgIDxsaW5lIHgxPSI5NyIgIHkxPSI5NyIgIHgyPSIxMTIiIHkyPSIxMTIiLz4KICAgIDxsaW5lIHgxPSI0MTUiIHkxPSI5NyIgIHgyPSI0MDAiIHkyPSIxMTIiLz4KICAgIDxsaW5lIHgxPSI5NyIgIHkxPSI0MTUiIHgyPSIxMTIiIHkyPSI0MDAiLz4KICAgIDxsaW5lIHgxPSI0MTUiIHkxPSI0MTUiIHgyPSI0MDAiIHkyPSI0MDAiLz4KICA8L2c+CgogIDwhLS0gT3V0ZXIgc3F1YXJlIChheGlzLWFsaWduZWQpIC0tPgogIDxyZWN0IHg9IjE0OCIgeT0iMTQ4IiB3aWR0aD0iMjE2IiBoZWlnaHQ9IjIxNiIKICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNnb2xkSCkiIHN0cm9rZS13aWR0aD0iMi4yIiBvcGFjaXR5PSIwLjU1Ii8+CgogIDwhLS0gT3V0ZXIgc3F1YXJlIChyb3RhdGVkIDQ1wrApIC0tPgogIDxyZWN0IHg9IjE0OCIgeT0iMTQ4IiB3aWR0aD0iMjE2IiBoZWlnaHQ9IjIxNiIKICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNnb2xkVikiIHN0cm9rZS13aWR0aD0iMi4yIiBvcGFjaXR5PSIwLjU1IgogICAgdHJhbnNmb3JtPSJyb3RhdGUoNDUgMjU2IDI1NikiLz4KCiAgPCEtLSBNaWRkbGUgc3F1YXJlIChyb3RhdGVkIDIyLjXCsCkgLS0+CiAgPHJlY3QgeD0iMTcyIiB5PSIxNzIiIHdpZHRoPSIxNjgiIGhlaWdodD0iMTY4IgogICAgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzlhODRjIiBzdHJva2Utd2lkdGg9IjEuNCIgb3BhY2l0eT0iMC4zMCIKICAgIHRyYW5zZm9ybT0icm90YXRlKDIyLjUgMjU2IDI1NikiLz4KCiAgPCEtLSBGYWludCBjcm9zcyArIFggdGhyb3VnaCBjZW50ZXIgLS0+CiAgPGcgc3Ryb2tlPSIjYzlhODRjIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9IjAuMTIiPgogICAgPGxpbmUgeDE9IjE0OCIgeTE9IjI1NiIgeDI9IjM2NCIgeTI9IjI1NiIvPgogICAgPGxpbmUgeDE9IjI1NiIgeTE9IjE0OCIgeDI9IjI1NiIgeTI9IjM2NCIvPgogICAgPGxpbmUgeDE9IjE0OCIgeTE9IjE0OCIgeDI9IjM2NCIgeTI9IjM2NCIvPgogICAgPGxpbmUgeDE9IjM2NCIgeTE9IjE0OCIgeDI9IjE0OCIgeTI9IjM2NCIvPgogIDwvZz4KCiAgPCEtLSBJbm5lciBvY3RhZ29uIC0tPgogIDxwb2x5Z29uCiAgICBwb2ludHM9IjI1NiwxODggMjg0LDE5NiAzMDQsMjIwIDMwNCwyNTYgMzA0LDI5MiAyODQsMzE2IDI1NiwzMjQgMjI4LDMxNiAyMDgsMjkyIDIwOCwyNTYgMjA4LDIyMCAyMjgsMTk2IgogICAgZmlsbD0icmdiYSgwLDAsMCwwLjYpIiBzdHJva2U9InVybCgjZ29sZEgpIiBzdHJva2Utd2lkdGg9IjIiIG9wYWNpdHk9IjAuODUiLz4KCiAgPCEtLSBJbm5lciBnbG93IGNpcmNsZSAtLT4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjUwIgogICAgZmlsbD0icmdiYSgyMDEsMTY4LDc2LDAuMDcpIiBzdHJva2U9InVybCgjZ29sZFJpbmcpIiBzdHJva2Utd2lkdGg9IjIuMiIKICAgIGZpbHRlcj0idXJsKCNzbSkiIG9wYWNpdHk9IjAuOSIvPgoKICA8IS0tIDgtcG9pbnRlZCBzdGFyIChyb3RhdGVkIHNxdWFyZXMgPSBjZW50cmFsIG1lZGFsbGlvbikgLS0+CiAgPGcgZmlsdGVyPSJ1cmwoI2dsb3cpIj4KICAgIDwhLS0gU3RhciBzaGFwZTogdHdvIG92ZXJsYXBwaW5nIHNxdWFyZXMgLS0+CiAgICA8cG9seWdvbgogICAgICBwb2ludHM9IjI1NiwyMTggMjY1LDI0NyAyOTUsMjQzIDI3MiwyNjIgMjk1LDI4MSAyNjUsMjc3IDI1NiwzMDYgMjQ3LDI3NyAyMTcsMjgxIDI0MCwyNjIgMjE3LDI0MyAyNDcsMjQ3IgogICAgICBmaWxsPSJ1cmwoI2dvbGRDZW50ZXIpIi8+CiAgPC9nPgoKICA8IS0tIDQgZGlhbW9uZCBhY2NlbnRzIGF0IGlubmVyIHJpbmcgY2FyZGluYWwgcG9pbnRzIC0tPgogIDxnIGZpbGw9InVybCgjZ29sZEgpIiBmaWx0ZXI9InVybCgjc20pIiBvcGFjaXR5PSIwLjkiPgogICAgPHBvbHlnb24gcG9pbnRzPSIyNTYsMTk3IDI2MSwyMDUgMjU2LDIxMyAyNTEsMjA1Ii8+CiAgICA8cG9seWdvbiBwb2ludHM9IjI1NiwyOTkgMjYxLDMwNyAyNTYsMzE1IDI1MSwzMDciLz4KICAgIDxwb2x5Z29uIHBvaW50cz0iMTk1LDI1NiAyMDMsMjYxIDIxMSwyNTYgMjAzLDI1MSIvPgogICAgPHBvbHlnb24gcG9pbnRzPSIyOTcsMjU2IDMwNSwyNjEgMzEzLDI1NiAzMDUsMjUxIi8+CiAgPC9nPgoKICA8IS0tIENvcm5lciBicmFja2V0IG9ybmFtZW50cyAtLT4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNjOWE4NGMiIHN0cm9rZS13aWR0aD0iMi44IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNDUiPgogICAgPHBhdGggZD0iTSA4OCA4OCBMIDg4IDExMiBNIDg4IDg4IEwgMTEyIDg4Ii8+CiAgICA8cGF0aCBkPSJNIDQyNCA4OCBMIDQyNCAxMTIgTSA0MjQgODggTCA0MDAgODgiLz4KICAgIDxwYXRoIGQ9Ik0gODggNDI0IEwgODggNDAwIE0gODggNDI0IEwgMTEyIDQyNCIvPgogICAgPHBhdGggZD0iTSA0MjQgNDI0IEwgNDI0IDQwMCBNIDQyNCA0MjQgTCA0MDAgNDI0Ii8+CiAgPC9nPgo8L3N2Zz4K">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnR2xvdyIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNjAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFjMTUwMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImdvbGRDZW50ZXIiIGN4PSI0MCUiIGN5PSIzNSUiIHI9IjYwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmN2UwODAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNjOWE4NGMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjN2E1YzE4Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJnb2xkUmluZyIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNTAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U4Yzk2YSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5YTc1MzAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdvbGRIIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y1ZDg3MCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2M5YTg0YyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3YTVjMTgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdvbGRWIiB4MT0iMTAwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkZDA2MCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2IwODgyOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1YzNlMGEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8ZmlsdGVyIGlkPSJnbG93Ij4KICAgICAgPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNSIgcmVzdWx0PSJibHVyIi8+CiAgICAgIDxmZUNvbXBvc2l0ZSBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJibHVyIiBvcGVyYXRvcj0ib3ZlciIvPgogICAgPC9maWx0ZXI+CiAgICA8ZmlsdGVyIGlkPSJzbSI+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjIuNSIgcmVzdWx0PSJibHVyIi8+CiAgICAgIDxmZUNvbXBvc2l0ZSBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJibHVyIiBvcGVyYXRvcj0ib3ZlciIvPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgoKICA8IS0tIEJhY2tncm91bmQgcm91bmRlZCBzcXVhcmUgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIHJ5PSIxMTIiIGZpbGw9InVybCgjYmdHbG93KSIvPgoKICA8IS0tIFN1YnRsZSB3YXJtIGNlbnRlciBnbG93IC0tPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjAwIiBmaWxsPSJyZ2JhKDIwMSwxNjgsNzYsMC4wNCkiLz4KCiAgPCEtLSBPdXRlciBib3JkZXIgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIHJ5PSIxMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2M5YTg0YyIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjE4Ii8+CgogIDwhLS0gT3V0ZXIgdGhpbiBjaXJjbGUgLS0+CiAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSIyMTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2M5YTg0YyIgc3Ryb2tlLXdpZHRoPSIxIiBvcGFjaXR5PSIwLjI1Ii8+CgogIDwhLS0gOCB0aWNrIG1hcmtzIGFyb3VuZCBvdXRlciByaW5nIC0tPgogIDxnIHN0cm9rZT0iI2M5YTg0YyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNiIgZmlsdGVyPSJ1cmwoI3NtKSI+CiAgICA8bGluZSB4MT0iMjU2IiB5MT0iNDEiICB4Mj0iMjU2IiB5Mj0iNjIiLz4KICAgIDxsaW5lIHgxPSIyNTYiIHkxPSI0NTAiIHgyPSIyNTYiIHkyPSI0NzEiLz4KICAgIDxsaW5lIHgxPSI0MSIgIHkxPSIyNTYiIHgyPSI2MiIgIHkyPSIyNTYiLz4KICAgIDxsaW5lIHgxPSI0NTAiIHkxPSIyNTYiIHgyPSI0NzEiIHkyPSIyNTYiLz4KICAgIDxsaW5lIHgxPSI5NyIgIHkxPSI5NyIgIHgyPSIxMTIiIHkyPSIxMTIiLz4KICAgIDxsaW5lIHgxPSI0MTUiIHkxPSI5NyIgIHgyPSI0MDAiIHkyPSIxMTIiLz4KICAgIDxsaW5lIHgxPSI5NyIgIHkxPSI0MTUiIHgyPSIxMTIiIHkyPSI0MDAiLz4KICAgIDxsaW5lIHgxPSI0MTUiIHkxPSI0MTUiIHgyPSI0MDAiIHkyPSI0MDAiLz4KICA8L2c+CgogIDwhLS0gT3V0ZXIgc3F1YXJlIChheGlzLWFsaWduZWQpIC0tPgogIDxyZWN0IHg9IjE0OCIgeT0iMTQ4IiB3aWR0aD0iMjE2IiBoZWlnaHQ9IjIxNiIKICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNnb2xkSCkiIHN0cm9rZS13aWR0aD0iMi4yIiBvcGFjaXR5PSIwLjU1Ii8+CgogIDwhLS0gT3V0ZXIgc3F1YXJlIChyb3RhdGVkIDQ1wrApIC0tPgogIDxyZWN0IHg9IjE0OCIgeT0iMTQ4IiB3aWR0aD0iMjE2IiBoZWlnaHQ9IjIxNiIKICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNnb2xkVikiIHN0cm9rZS13aWR0aD0iMi4yIiBvcGFjaXR5PSIwLjU1IgogICAgdHJhbnNmb3JtPSJyb3RhdGUoNDUgMjU2IDI1NikiLz4KCiAgPCEtLSBNaWRkbGUgc3F1YXJlIChyb3RhdGVkIDIyLjXCsCkgLS0+CiAgPHJlY3QgeD0iMTcyIiB5PSIxNzIiIHdpZHRoPSIxNjgiIGhlaWdodD0iMTY4IgogICAgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzlhODRjIiBzdHJva2Utd2lkdGg9IjEuNCIgb3BhY2l0eT0iMC4zMCIKICAgIHRyYW5zZm9ybT0icm90YXRlKDIyLjUgMjU2IDI1NikiLz4KCiAgPCEtLSBGYWludCBjcm9zcyArIFggdGhyb3VnaCBjZW50ZXIgLS0+CiAgPGcgc3Ryb2tlPSIjYzlhODRjIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9IjAuMTIiPgogICAgPGxpbmUgeDE9IjE0OCIgeTE9IjI1NiIgeDI9IjM2NCIgeTI9IjI1NiIvPgogICAgPGxpbmUgeDE9IjI1NiIgeTE9IjE0OCIgeDI9IjI1NiIgeTI9IjM2NCIvPgogICAgPGxpbmUgeDE9IjE0OCIgeTE9IjE0OCIgeDI9IjM2NCIgeTI9IjM2NCIvPgogICAgPGxpbmUgeDE9IjM2NCIgeTE9IjE0OCIgeDI9IjE0OCIgeTI9IjM2NCIvPgogIDwvZz4KCiAgPCEtLSBJbm5lciBvY3RhZ29uIC0tPgogIDxwb2x5Z29uCiAgICBwb2ludHM9IjI1NiwxODggMjg0LDE5NiAzMDQsMjIwIDMwNCwyNTYgMzA0LDI5MiAyODQsMzE2IDI1NiwzMjQgMjI4LDMxNiAyMDgsMjkyIDIwOCwyNTYgMjA4LDIyMCAyMjgsMTk2IgogICAgZmlsbD0icmdiYSgwLDAsMCwwLjYpIiBzdHJva2U9InVybCgjZ29sZEgpIiBzdHJva2Utd2lkdGg9IjIiIG9wYWNpdHk9IjAuODUiLz4KCiAgPCEtLSBJbm5lciBnbG93IGNpcmNsZSAtLT4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjUwIgogICAgZmlsbD0icmdiYSgyMDEsMTY4LDc2LDAuMDcpIiBzdHJva2U9InVybCgjZ29sZFJpbmcpIiBzdHJva2Utd2lkdGg9IjIuMiIKICAgIGZpbHRlcj0idXJsKCNzbSkiIG9wYWNpdHk9IjAuOSIvPgoKICA8IS0tIDgtcG9pbnRlZCBzdGFyIChyb3RhdGVkIHNxdWFyZXMgPSBjZW50cmFsIG1lZGFsbGlvbikgLS0+CiAgPGcgZmlsdGVyPSJ1cmwoI2dsb3cpIj4KICAgIDwhLS0gU3RhciBzaGFwZTogdHdvIG92ZXJsYXBwaW5nIHNxdWFyZXMgLS0+CiAgICA8cG9seWdvbgogICAgICBwb2ludHM9IjI1NiwyMTggMjY1LDI0NyAyOTUsMjQzIDI3MiwyNjIgMjk1LDI4MSAyNjUsMjc3IDI1NiwzMDYgMjQ3LDI3NyAyMTcsMjgxIDI0MCwyNjIgMjE3LDI0MyAyNDcsMjQ3IgogICAgICBmaWxsPSJ1cmwoI2dvbGRDZW50ZXIpIi8+CiAgPC9nPgoKICA8IS0tIDQgZGlhbW9uZCBhY2NlbnRzIGF0IGlubmVyIHJpbmcgY2FyZGluYWwgcG9pbnRzIC0tPgogIDxnIGZpbGw9InVybCgjZ29sZEgpIiBmaWx0ZXI9InVybCgjc20pIiBvcGFjaXR5PSIwLjkiPgogICAgPHBvbHlnb24gcG9pbnRzPSIyNTYsMTk3IDI2MSwyMDUgMjU2LDIxMyAyNTEsMjA1Ii8+CiAgICA8cG9seWdvbiBwb2ludHM9IjI1NiwyOTkgMjYxLDMwNyAyNTYsMzE1IDI1MSwzMDciLz4KICAgIDxwb2x5Z29uIHBvaW50cz0iMTk1LDI1NiAyMDMsMjYxIDIxMSwyNTYgMjAzLDI1MSIvPgogICAgPHBvbHlnb24gcG9pbnRzPSIyOTcsMjU2IDMwNSwyNjEgMzEzLDI1NiAzMDUsMjUxIi8+CiAgPC9nPgoKICA8IS0tIENvcm5lciBicmFja2V0IG9ybmFtZW50cyAtLT4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNjOWE4NGMiIHN0cm9rZS13aWR0aD0iMi44IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNDUiPgogICAgPHBhdGggZD0iTSA4OCA4OCBMIDg4IDExMiBNIDg4IDg4IEwgMTEyIDg4Ii8+CiAgICA8cGF0aCBkPSJNIDQyNCA4OCBMIDQyNCAxMTIgTSA0MjQgODggTCA0MDAgODgiLz4KICAgIDxwYXRoIGQ9Ik0gODggNDI0IEwgODggNDAwIE0gODggNDI0IEwgMTEyIDQyNCIvPgogICAgPHBhdGggZD0iTSA0MjQgNDI0IEwgNDI0IDQwMCBNIDQyNCA0MjQgTCA0MDAgNDI0Ii8+CiAgPC9nPgo8L3N2Zz4K">
+<title>לוח יהודי · Jewish Calendar</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+:root {
+  --gold: #c9a84c;
+  --gold-bright: #e8c96a;
+  --gold-dim: rgba(201,168,76,0.2);
+  --gold-glow: rgba(201,168,76,0.08);
+  --cream: #f0ead8;
+  --cream-dim: rgba(240,234,216,0.6);
+  --warm: #9b8460;
+  --warm-dim: rgba(155,132,96,0.55);
+  --bg: #000000;
+  --bg2: #0a0905;
+  --bg3: #111008;
+  --panel: rgba(201,168,76,0.05);
+  --border: rgba(201,168,76,0.15);
+  --tab-h: 72px;
+  --status-h: 56px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bot: env(safe-area-inset-bottom, 0px);
+}
+
+html, body {
+  height: 100%; width: 100%;
+  background: #111;
+  display: flex; justify-content: center; align-items: center;
+  overflow: hidden;
+}
+
+/* ── Phone Shell ── */
+.phone {
+  width: 100%; max-width: 430px;
+  height: 100%; max-height: 932px;
+  background: var(--bg);
+  display: flex; flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 80px rgba(0,0,0,.9), 0 0 0 1px rgba(201,168,76,.08);
+}
+
+/* ── Status Bar ── */
+.status-bar {
+  flex-shrink: 0;
+  height: var(--status-h);
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center;
+  padding: 0 1.2rem;
+  gap: 0;
+  position: relative;
+  z-index: 20;
+}
+.status-time {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--cream);
+  letter-spacing: .04em;
+  flex: 0 0 auto;
+  min-width: 4.5rem;
+}
+.status-time .ampm { font-size: .6em; color: var(--gold); margin-left: .15em; vertical-align: super; letter-spacing: .1em; }
+.status-city {
+  flex: 1;
+  font-size: .58rem; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--warm); text-align: center;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  padding: 0 .5rem;
+  transition: opacity .4s ease;
+}
+.status-ornament {
+  font-size: .7rem; color: var(--gold); opacity: .5; flex: 0 0 auto; text-align: right;
+  letter-spacing: .3em;
+}
+
+/* ── Screen Container ── */
+.screens {
+  flex: 1; overflow: hidden;
+  position: relative;
+}
+.screen {
+  position: absolute; inset: 0;
+  overflow-y: auto; overflow-x: hidden;
+  padding: 1.2rem 1.1rem 1.4rem;
+  opacity: 0; pointer-events: none;
+  transform: translateX(30px);
+  transition: opacity .22s ease, transform .22s ease;
+  -webkit-overflow-scrolling: touch;
+}
+.screen.active {
+  opacity: 1; pointer-events: auto;
+  transform: translateX(0);
+}
+.screen.exit-left { transform: translateX(-30px); }
+
+/* ── Tab Bar ── */
+.tab-bar {
+  flex-shrink: 0;
+  height: var(--tab-h);
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  display: grid; grid-template-columns: repeat(5, 1fr);
+  align-items: stretch;
+  padding-bottom: var(--safe-bot);
+}
+.tab {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: .18rem; cursor: pointer; border: none; background: none;
+  transition: opacity .15s;
+  padding: .4rem .1rem;
+  position: relative;
+}
+.tab::after {
+  content: '';
+  position: absolute; top: 0; left: 20%; right: 20%; height: 2px;
+  background: var(--gold);
+  transform: scaleX(0); transition: transform .2s ease;
+  transform-origin: center;
+}
+.tab.active::after { transform: scaleX(1); }
+.tab-icon {
+  font-size: 1.1rem; line-height: 1;
+  filter: saturate(0) brightness(.5);
+  transition: filter .15s;
+}
+.tab.active .tab-icon { filter: none; }
+.tab-label {
+  font-size: .38rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--warm-dim); font-family: 'Frank Ruhl Libre', serif;
+  transition: color .15s; text-align: center; line-height: 1.2;
+}
+.tab.active .tab-label { color: var(--gold); }
+
+/* ── Shared Card ── */
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 1.2rem 1.1rem;
+  margin-bottom: .85rem;
+  position: relative;
+}
+.card-corner {
+  position: absolute; font-size: .35rem; color: var(--gold); opacity: .4;
+}
+.card-corner.tl { top: -.3rem; left: -.3rem; }
+.card-corner.br { bottom: -.3rem; right: -.3rem; }
+.card-label {
+  font-size: .52rem; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--warm); font-weight: 300; margin-bottom: .65rem;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+.gold-rule {
+  width: 40px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 0 auto .9rem;
+}
+
+/* ── Screen 1: Date ── */
+.heb-big {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: clamp(2.2rem, 9vw, 2.8rem);
+  color: var(--cream); direction: rtl; text-align: center;
+  line-height: 1.15; letter-spacing: .02em;
+}
+.heb-transliteration {
+  font-family: 'Playfair Display', serif; font-style: italic;
+  font-size: .88rem; color: var(--gold); text-align: center;
+  margin-top: .45rem; opacity: .85;
+  letter-spacing: .04em;
+}
+.holiday-tag {
+  text-align: center; font-size: .62rem; letter-spacing: .2em;
+  color: var(--gold-bright); text-transform: uppercase; margin-top: .6rem;
+  min-height: 1rem;
+}
+.greg-big {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.25rem, 5vw, 1.6rem);
+  color: var(--cream); text-align: center; line-height: 1.3;
+}
+.sunset-chip {
+  display: inline-block; font-size: .52rem; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--gold);
+  border: 1px solid var(--gold-dim); padding: .22rem .7rem;
+  margin-top: .5rem;
+}
+
+/* ── Day countdown widget ── */
+.day-row {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: .5rem; margin-top: .2rem;
+}
+.day-tile {
+  background: rgba(201,168,76,.04); border: 1px solid var(--gold-dim);
+  padding: .7rem .4rem; text-align: center;
+}
+.day-tile-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem; color: var(--cream); line-height: 1;
+}
+.day-tile-label {
+  font-size: .46rem; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--warm-dim); margin-top: .3rem;
+}
+
+/* ── Screen 2: Shabbat ── */
+.shabbat-hero {
+  text-align: center; padding: .6rem 0 .9rem;
+}
+.shabbat-day-label {
+  font-size: .55rem; letter-spacing: .28em; text-transform: uppercase;
+  color: var(--warm); margin-bottom: .3rem;
+}
+.shabbat-time-big {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem; color: var(--cream); line-height: 1;
+}
+.shabbat-time-day {
+  font-size: .62rem; letter-spacing: .15em; color: var(--warm-dim); margin-top: .3rem;
+}
+.shabbat-note {
+  font-size: .5rem; letter-spacing: .12em; color: var(--gold); opacity: .5;
+  margin-top: .2rem; text-transform: uppercase;
+}
+.shabbat-divider {
+  width: 100%; height: 1px;
+  background: linear-gradient(90deg,transparent,var(--gold-dim),transparent);
+  margin: .9rem 0;
+}
+.time-row {
+  display: flex; align-items: center; padding: .75rem 0;
+  border-bottom: 1px solid rgba(201,168,76,.07);
+}
+.time-row:last-child { border-bottom: none; }
+.time-row-icon { font-size: 1.3rem; width: 2.2rem; flex-shrink: 0; }
+.time-row-body { flex: 1; }
+.time-row-label {
+  font-size: .52rem; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--warm); margin-bottom: .15rem;
+}
+.time-row-time {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem; color: var(--cream); line-height: 1;
+}
+.time-row-day {
+  font-size: .55rem; letter-spacing: .1em; color: var(--warm-dim); margin-top: .1rem;
+}
+.time-row-note {
+  font-size: .5rem; color: var(--gold); opacity: .45; margin-top: .08rem;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+
+/* ── Screen 3: Parasha ── */
+.parasha-name-big {
+  font-family: 'Playfair Display', serif; font-style: italic;
+  font-size: clamp(1.4rem, 6vw, 2rem); color: var(--cream);
+  text-align: center; line-height: 1.2;
+}
+.parasha-heb-big {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: clamp(1.4rem, 6vw, 2rem);
+  color: var(--gold); direction: rtl; text-align: center;
+  margin-top: .4rem; opacity: .85;
+}
+.reading-list { margin-top: .6rem; }
+.reading-item {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  padding: .6rem 0; border-top: 1px solid rgba(201,168,76,.08);
+  gap: .5rem;
+}
+.reading-key {
+  font-size: .52rem; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--gold); opacity: .65; min-width: 70px; padding-top: .05rem;
+  flex-shrink: 0;
+}
+.reading-val {
+  font-size: .75rem; color: var(--warm-dim); text-align: right; line-height: 1.4;
+}
+
+/* ── Screen 4: Yahrzeit ── */
+.ytz-item {
+  border-left: 2px solid var(--gold-dim); padding-left: .95rem;
+  margin-bottom: 1.1rem;
+}
+.ytz-name {
+  font-family: 'Frank Ruhl Libre', 'Playfair Display', serif;
+  font-size: 1.05rem; color: var(--cream); line-height: 1.3;
+}
+.ytz-years {
+  font-size: .5rem; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--gold); opacity: .7; margin: .3rem 0 .5rem;
+}
+.ytz-bio {
+  font-size: .72rem; color: var(--warm-dim); line-height: 1.65;
+}
+.ytz-tomb {
+  display: flex; align-items: center; gap: .4rem;
+  font-size: .55rem; letter-spacing: .13em; text-transform: uppercase;
+  color: rgba(201,168,76,.5); margin-top: .55rem;
+}
+.ytz-tomb-icon { font-size: .6rem; opacity: .6; }
+.tehillim-section { margin-top: .75rem; }
+.tehillim-label {
+  font-size: .48rem; letter-spacing: .25em; text-transform: uppercase;
+  color: var(--gold); opacity: .65; margin-bottom: .55rem;
+}
+.tehillim-blocks { display: flex; flex-direction: column; gap: .65rem; }
+.t-block {
+  border: 1px solid var(--gold-dim);
+  background: rgba(201,168,76,0.03);
+}
+.t-block-header {
+  display: flex; align-items: center; gap: .65rem;
+  padding: .55rem .75rem;
+  border-bottom: 1px solid var(--gold-dim);
+}
+.t-block-heb {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.5rem; color: var(--gold); line-height: 1; flex-shrink: 0;
+}
+.t-block-meta { flex: 1; }
+.t-block-name {
+  font-size: .58rem; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--warm); margin-bottom: .12rem;
+}
+.t-block-ref {
+  font-size: .5rem; letter-spacing: .12em; color: var(--gold); opacity: .55;
+}
+.t-block-verses { padding: .55rem .75rem; display: flex; flex-direction: column; gap: .45rem; }
+.t-verse { display: flex; gap: .55rem; align-items: flex-start; }
+.t-verse-num {
+  font-size: .48rem; color: var(--gold); opacity: .5; min-width: 1.4rem;
+  padding-top: .15rem; letter-spacing: .05em; flex-shrink: 0; text-align: right;
+}
+.t-verse-text {
+  font-size: .72rem; color: var(--cream-dim); line-height: 1.65;
+}
+.t-verse-body { flex: 1; }
+.t-verse-heb {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: .72rem; color: var(--cream); direction: rtl; text-align: right;
+  line-height: 1.6; margin-bottom: .2rem;
+}
+.t-verse-eng {
+  font-size: .72rem; color: var(--warm-dim); line-height: 1.65; font-style: italic;
+}
+.no-ytz {
+  text-align: center; font-style: italic;
+  color: var(--warm-dim); font-size: .8rem; padding: 1rem 0;
+}
+.ytz-footer {
+  text-align: center; margin-top: .8rem;
+  font-size: .5rem; letter-spacing: .2em; text-transform: uppercase;
+  color: rgba(139,115,85,.35);
+}
+
+/* ── Screen header ornament ── */
+.screen-header {
+  text-align: center; margin-bottom: 1.1rem;
+}
+.screen-header-ornament {
+  font-size: .7rem; color: var(--gold); opacity: .45;
+  letter-spacing: .5em; display: block; margin-bottom: .4rem;
+}
+.screen-header-title {
+  font-size: .55rem; letter-spacing: .32em; text-transform: uppercase;
+  color: var(--warm); font-weight: 300;
+}
+
+/* ── Pulse for loading ── */
+@keyframes shimmer {
+  0%,100%{opacity:.35} 50%{opacity:.7}
+}
+.shimmer { animation: shimmer 1.6s ease infinite; }
+
+/* ── Scrollbar hidden ── */
+.screen::-webkit-scrollbar { display: none; }
+.screen { scrollbar-width: none; }
+
+/* ── Shop ── */
+.shop-currency-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .55rem 1.1rem; margin: .5rem .8rem 0;
+  background: rgba(201,168,76,.04); border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.shop-currency-label {
+  font-size: .52rem; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--warm-dim);
+}
+.shop-currency-btns { display: flex; gap: .3rem; }
+.cur-btn {
+  background: transparent; border: 1px solid var(--border);
+  color: var(--warm-dim); font-size: .6rem; padding: .25rem .55rem;
+  border-radius: 8px; cursor: pointer; letter-spacing: .06em;
+  font-family: inherit; transition: all .2s;
+}
+.cur-btn.active {
+  background: var(--gold); color: #1a120a; border-color: var(--gold);
+  font-weight: 700;
+}
+.shop-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: .75rem; padding: .75rem .8rem;
+}
+.shop-loading {
+  grid-column: 1/-1; text-align: center;
+  color: var(--warm-dim); font-size: .72rem; padding: 2rem;
+}
+.product-card {
+  background: rgba(201,168,76,.04); border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;
+  transition: border-color .2s;
+}
+.product-card:active { border-color: var(--gold); }
+.product-img {
+  width: 100%; aspect-ratio: 1; object-fit: cover;
+  background: rgba(201,168,76,.06);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.5rem;
+}
+.product-img img { width:100%; height:100%; object-fit:cover; }
+.product-body { padding: .55rem .6rem .6rem; flex: 1; display: flex; flex-direction: column; }
+.product-name {
+  font-size: .72rem; color: var(--cream); line-height: 1.35;
+  font-family: 'Playfair Display', serif; margin-bottom: .18rem;
+}
+.product-name-heb {
+  font-size: .72rem; color: var(--gold); opacity: .8; line-height: 1.3;
+  font-family: 'Frank Ruhl Libre', serif; margin-bottom: .35rem; direction: rtl;
+}
+.product-desc {
+  font-size: .56rem; color: var(--warm-dim); line-height: 1.5;
+  flex: 1; margin-bottom: .45rem;
+}
+.product-footer { display: flex; align-items: center; justify-content: space-between; }
+.product-price {
+  font-size: .82rem; font-weight: 700; color: var(--gold);
+  letter-spacing: .02em;
+}
+.product-stock {
+  font-size: .5rem; color: var(--warm-dim); letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.product-stock.out { color: #c0392b; }
+.add-to-cart-btn {
+  width: 100%; margin-top: .4rem;
+  background: var(--gold); color: #1a120a; border: none;
+  font-size: .62rem; font-weight: 700; padding: .38rem 0;
+  border-radius: 8px; cursor: pointer; font-family: inherit;
+  letter-spacing: .06em; transition: opacity .2s;
+}
+.add-to-cart-btn:disabled { opacity: .35; cursor: not-allowed; }
+.cart-item-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .35rem 0; border-bottom: 1px solid var(--border); gap: .4rem;
+}
+.cart-item-name { font-size: .68rem; color: var(--cream); flex: 1; }
+.cart-item-qty-ctrl { display: flex; align-items: center; gap: .3rem; }
+.cart-qty-btn {
+  background: rgba(201,168,76,.12); border: 1px solid var(--border);
+  color: var(--gold); width: 1.4rem; height: 1.4rem; border-radius: 6px;
+  font-size: .75rem; cursor: pointer; font-family: inherit;
+  display: flex; align-items: center; justify-content: center;
+}
+.cart-item-qty { font-size: .72rem; color: var(--cream); min-width: 1rem; text-align: center; }
+.cart-item-price { font-size: .72rem; color: var(--gold); font-weight: 700; min-width: 3rem; text-align: right; }
+.cart-total-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: .6rem 0 .5rem; margin-top: .2rem;
+}
+.cart-total-label { font-size: .55rem; letter-spacing: .18em; text-transform: uppercase; color: var(--warm-dim); }
+.cart-total-val { font-size: 1.1rem; font-weight: 700; color: var(--gold); }
+.shop-checkout-btn {
+  width: 100%; background: var(--gold); color: #1a120a;
+  border: none; border-radius: 10px; font-size: .72rem; font-weight: 700;
+  padding: .7rem; cursor: pointer; font-family: inherit;
+  letter-spacing: .06em; margin-top: .4rem; margin-bottom: .3rem;
+}
+.shop-clear-btn {
+  width: 100%; background: transparent; color: var(--warm-dim);
+  border: 1px solid var(--border); border-radius: 10px; font-size: .62rem;
+  padding: .45rem; cursor: pointer; font-family: inherit; letter-spacing: .06em;
+}
+.cart-badge {
+  position: absolute; top: -4px; right: -4px;
+  background: var(--gold); color: #1a120a; border-radius: 50%;
+  font-size: .45rem; font-weight: 700; width: 1rem; height: 1rem;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ── Floating Cart Button ── */
+.float-cart-btn {
+  position: absolute; bottom: calc(var(--tab-h) + 1rem);
+  right: 1rem; z-index: 50;
+  background: var(--gold); color: #1a120a;
+  border: none; border-radius: 50px;
+  padding: .55rem 1.1rem .55rem .85rem;
+  display: flex; align-items: center; gap: .45rem;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: .68rem; font-weight: 700; letter-spacing: .04em;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(201,168,76,.35), 0 2px 8px rgba(0,0,0,.5);
+  transition: transform .18s ease, box-shadow .18s ease, opacity .2s ease;
+  opacity: 0; pointer-events: none;
+}
+.float-cart-btn.visible { opacity: 1; pointer-events: auto; }
+.float-cart-btn:active { transform: scale(.96); }
+.float-cart-icon { font-size: 1rem; line-height: 1; }
+.float-cart-count {
+  background: #1a120a; color: var(--gold);
+  border-radius: 50%; width: 1.3rem; height: 1.3rem;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .58rem; font-weight: 900;
+}
+
+/* ── Cart Modal Overlay ── */
+.cart-modal-overlay {
+  position: absolute; inset: 0; z-index: 100;
+  background: rgba(0,0,0,.7);
+  backdrop-filter: blur(4px);
+  opacity: 0; pointer-events: none;
+  transition: opacity .25s ease;
+  display: flex; flex-direction: column; justify-content: flex-end;
+}
+.cart-modal-overlay.open { opacity: 1; pointer-events: auto; }
+.cart-modal {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  border-radius: 20px 20px 0 0;
+  padding: 1.2rem 1.2rem 1.6rem;
+  max-height: 88%;
+  overflow-y: auto;
+  transform: translateY(100%);
+  transition: transform .3s cubic-bezier(.32,.72,0,1);
+}
+.cart-modal-overlay.open .cart-modal { transform: translateY(0); }
+.cart-modal::-webkit-scrollbar { display: none; }
+.cart-modal-handle {
+  width: 2.5rem; height: 3px;
+  background: rgba(201,168,76,.3); border-radius: 2px;
+  margin: 0 auto .9rem;
+}
+.cart-modal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem; color: var(--cream);
+  text-align: center; margin-bottom: .2rem;
+}
+.cart-modal-subtitle {
+  font-size: .48rem; letter-spacing: .25em; text-transform: uppercase;
+  color: var(--warm); text-align: center; margin-bottom: 1rem;
+}
+.cart-section-label {
+  font-size: .48rem; letter-spacing: .25em; text-transform: uppercase;
+  color: var(--gold); opacity: .7; margin: 1rem 0 .55rem;
+}
+.cart-divider {
+  width: 100%; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+  margin: .9rem 0;
+}
+
+/* Customer form */
+.cust-field {
+  margin-bottom: .65rem;
+}
+.cust-label {
+  font-size: .48rem; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--warm); display: block; margin-bottom: .3rem;
+}
+.cust-input {
+  width: 100%; background: rgba(201,168,76,.05);
+  border: 1px solid var(--border); border-radius: 8px;
+  color: var(--cream); font-family: 'Frank Ruhl Libre', serif;
+  font-size: .78rem; padding: .55rem .75rem;
+  outline: none; transition: border-color .2s;
+  -webkit-appearance: none;
+}
+.cust-input:focus { border-color: var(--gold); }
+.cust-input::placeholder { color: rgba(155,132,96,.4); }
+.cust-row { display: grid; grid-template-columns: 1fr 1fr; gap: .55rem; }
+
+/* Cart items inside modal */
+.modal-cart-item {
+  display: flex; align-items: center;
+  padding: .6rem 0;
+  border-bottom: 1px solid rgba(201,168,76,.07);
+  gap: .5rem;
+}
+.modal-cart-item:last-child { border-bottom: none; }
+.modal-item-emoji { font-size: 1.3rem; flex-shrink: 0; width: 2rem; text-align: center; }
+.modal-item-body { flex: 1; }
+.modal-item-name { font-size: .72rem; color: var(--cream); line-height: 1.3; }
+.modal-item-heb { font-size: .65rem; color: var(--gold); opacity: .7;
+  font-family: 'Frank Ruhl Libre', serif; direction: rtl; }
+.modal-item-controls { display: flex; align-items: center; gap: .35rem; }
+.modal-qty-btn {
+  background: rgba(201,168,76,.1); border: 1px solid var(--border);
+  color: var(--gold); width: 1.5rem; height: 1.5rem;
+  border-radius: 6px; font-size: .85rem; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-family: inherit;
+}
+.modal-item-qty { font-size: .75rem; color: var(--cream); min-width: 1.2rem; text-align: center; }
+.modal-item-price { font-size: .75rem; color: var(--gold); font-weight: 700; min-width: 3.5rem; text-align: right; }
+
+/* Total row */
+.modal-total-row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: .65rem 0 .2rem;
+}
+.modal-total-label {
+  font-size: .52rem; letter-spacing: .2em; text-transform: uppercase; color: var(--warm-dim);
+}
+.modal-total-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem; color: var(--gold); font-weight: 600;
+}
+
+/* Checkout button */
+.modal-checkout-btn {
+  width: 100%; margin-top: .75rem;
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+  color: #1a120a; border: none; border-radius: 12px;
+  font-size: .78rem; font-weight: 900; padding: .85rem;
+  cursor: pointer; font-family: 'Frank Ruhl Libre', serif;
+  letter-spacing: .08em; text-transform: uppercase;
+  box-shadow: 0 4px 16px rgba(201,168,76,.25);
+  transition: opacity .2s;
+}
+.modal-checkout-btn:active { opacity: .85; }
+.modal-checkout-btn:disabled { opacity: .4; cursor: not-allowed; }
+.modal-clear-btn {
+  width: 100%; margin-top: .5rem;
+  background: transparent; color: rgba(155,132,96,.55);
+  border: 1px solid rgba(201,168,76,.1); border-radius: 10px;
+  font-size: .62rem; padding: .5rem;
+  cursor: pointer; font-family: inherit; letter-spacing: .06em;
+}
+.modal-note {
+  text-align: center; margin-top: .75rem;
+  font-size: .5rem; letter-spacing: .12em;
+  color: rgba(139,115,85,.4); line-height: 1.7;
+}
+.field-error { border-color: #c0392b !important; }
+.error-msg { font-size: .48rem; color: #e74c3c; margin-top: .2rem; display: none; }
+.error-msg.show { display: block; }
+
+/* Order Success Screen */
+.cart-success {
+  display: none;
+  flex-direction: column; align-items: center; justify-content: center;
+  text-align: center;
+  padding: 2.5rem 1.5rem 2rem;
+  min-height: 55vh;
+}
+.cart-success.show { display: flex; }
+.success-icon {
+  font-size: 3.5rem; margin-bottom: 1.1rem;
+  animation: successPop .45s cubic-bezier(.34,1.56,.64,1) both;
+}
+@keyframes successPop {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+.success-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem; color: var(--gold);
+  margin-bottom: .8rem; line-height: 1.2;
+}
+.success-order-num {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: .62rem; letter-spacing: .18em;
+  color: #1a120a; background: var(--gold);
+  padding: .3rem .9rem; border-radius: 20px;
+  margin-bottom: .8rem; font-weight: 700;
+}
+.success-msg {
+  font-size: .75rem; color: var(--warm-dim);
+  line-height: 1.75; max-width: 280px;
+}
+.success-nav-label {
+  font-size: .48rem; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--warm); margin-top: 1.4rem; margin-bottom: .65rem;
+}
+.success-nav-btns {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: .45rem; width: 100%; max-width: 260px;
+}
+.success-nav-btn {
+  background: rgba(201,168,76,.07);
+  border: 1px solid var(--border);
+  color: var(--cream); border-radius: 10px;
+  font-size: .62rem; padding: .55rem .4rem;
+  cursor: pointer; font-family: 'Frank Ruhl Libre', serif;
+  letter-spacing: .04em; transition: border-color .18s, background .18s;
+}
+.success-nav-btn:active { background: rgba(201,168,76,.15); border-color: var(--gold); }
+.success-gmail-btn {
+  margin-top: 1.4rem;
+  background: transparent;
+  color: var(--gold); border: 1px solid var(--gold-dim);
+  border-radius: 50px;
+  font-size: .72rem; font-weight: 700; padding: .65rem 1.8rem;
+  cursor: pointer; font-family: 'Frank Ruhl Libre', serif;
+  letter-spacing: .06em; width: 100%; max-width: 240px;
+}
+.success-home-btn {
+  margin-top: 1.8rem;
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+  color: #1a120a; border: none; border-radius: 50px;
+  font-size: .72rem; font-weight: 900; padding: .7rem 2rem;
+  cursor: pointer; font-family: 'Frank Ruhl Libre', serif;
+  letter-spacing: .08em; text-transform: uppercase;
+  box-shadow: 0 4px 16px rgba(201,168,76,.3);
+}
+</style>
+</head>
+<body>
+
+<div class="phone">
+
+  <!-- Status Bar -->
+  <div class="status-bar">
+    <div class="status-time" id="statusTime">--:--<span class="ampm" id="statusAmpm"></span></div>
+    <div class="status-city" id="statusCity"></div>
+    <div class="status-ornament">✦ ✡</div>
+  </div>
+
+  <!-- Screens -->
+  <div class="screens">
+
+    <!-- Screen 1: Date -->
+    <div class="screen active" id="screen-date">
+      <div class="screen-header">
+        <div class="screen-header-title">Today's Date · תאריך היום</div>
+      </div>
+
+      <div class="card">
+        <span class="card-corner tl">✦</span>
+        <span class="card-corner br">✦</span>
+        <div class="card-label">Hebrew Date · לוח עברי</div>
+        <div class="gold-rule"></div>
+        <div class="heb-big" id="hebDate">…</div>
+        <div class="heb-transliteration" id="hebTranslit"></div>
+        <div class="holiday-tag" id="holidayTag"></div>
+      </div>
+
+      <div class="card">
+        <span class="card-corner tl">✦</span>
+        <span class="card-corner br">✦</span>
+        <div class="card-label">Gregorian Date · לוח גרגוריאני</div>
+        <div class="gold-rule"></div>
+        <div class="greg-big" id="gregDate">…</div>
+        <div style="text-align:center;margin-top:.5rem;" id="sunsetBadge"></div>
+      </div>
+
+      <div class="card">
+        <span class="card-corner tl">✦</span>
+        <span class="card-corner br">✦</span>
+        <div class="card-label">This Week · השבוע</div>
+        <div class="gold-rule"></div>
+        <div class="day-row" id="dayRow">
+          <div class="day-tile"><div class="day-tile-num shimmer">—</div><div class="day-tile-label">Day of Week · יום</div></div>
+          <div class="day-tile"><div class="day-tile-num shimmer">—</div><div class="day-tile-label">Hebrew Day · יום עברי</div></div>
+          <div class="day-tile"><div class="day-tile-num shimmer">—</div><div class="day-tile-label">To Shabbat · לשבת</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screen 2: Shabbat -->
+    <div class="screen" id="screen-shabbat">
+      <div class="screen-header">
+        <span class="screen-header-ornament">🕯️ ✦ 🕯️</span>
+        <div class="screen-header-title">Shabbat Times · זמני שבת</div>
+      </div>
+
+      <div class="card" id="candlesCard">
+        <span class="card-corner tl">✦</span>
+        <span class="card-corner br">✦</span>
+        <div class="card-label">Candle Lighting · הדלקת נרות</div>
+        <div class="gold-rule"></div>
+        <div class="shabbat-hero">
+          <div class="shabbat-day-label">Friday Evening · ערב שבת</div>
+          <div class="shabbat-time-big" id="candleTime">—:——</div>
+          <div class="shabbat-time-day" id="candleDay"></div>
+          <div class="shabbat-note">18 minutes before sunset · י״ח דקות לפני שקיעה</div>
+        </div>
+      </div>
+
+      <div class="card" id="timesCard">
+        <span class="card-corner tl">✦</span>
+        <span class="card-corner br">✦</span>
+        <div class="card-label">Motzei Shabbat · מוצאי שבת</div>
+        <div class="gold-rule"></div>
+        <div class="time-row">
+          <div class="time-row-icon">✨</div>
+          <div class="time-row-body">
+            <div class="time-row-label">Havdalah · הַבְדָּלָה</div>
+            <div class="time-row-time" id="havdalahTime">—</div>
+            <div class="time-row-day" id="havdalahDay"></div>
+            <div class="time-row-note">Tzeit Hakochavim · צאת הכוכבים (8.5°)</div>
+          </div>
+        </div>
+        <div class="time-row">
+          <div class="time-row-icon">⭐</div>
+          <div class="time-row-body">
+            <div class="time-row-label">Rabbeinu Tam · רבינו תם</div>
+            <div class="time-row-time" id="rtTime">—</div>
+            <div class="time-row-day" id="rtDay"></div>
+            <div class="time-row-note">72 min after sunset · חומרת אשכנז</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="card-corner tl">✦</span>
+        <span class="card-corner br">✦</span>
+        <div class="card-label" style="margin-bottom:.4rem;">Location · מיקום</div>
+        <div style="font-size:.72rem;color:var(--warm-dim);letter-spacing:.05em;" id="locationInfo"></div>
+        <div style="font-size:.5rem;color:rgba(139,115,85,.35);margin-top:.55rem;letter-spacing:.15em;text-transform:uppercase;">Consult your Rav for psak halacha · שאל את רבך לפסק הלכה</div>
+      </div>
+    </div>
+
+    <!-- Screen 3: Parasha -->
+    <div class="screen" id="screen-parasha">
+      <div class="screen-header">
+        <span class="screen-header-ornament">📜 ✦ 📜</span>
+        <div class="screen-header-title">Parashat HaShavua · פרשת השבוע</div>
+      </div>
+      <div class="card" id="parashaCard">
+        <span class="card-corner tl">✦</span>
+        <span class="card-corner br">✦</span>
+        <div class="card-label">This Shabbat's Torah Portion · פרשת השבוע</div>
+        <div class="gold-rule"></div>
+        <div id="parashaContent">
+          <div class="parasha-name-big shimmer">Loading · טוען…</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screen 4: Yahrzeit -->
+    <div class="screen" id="screen-yahrzeit">
+      <div class="screen-header">
+        <span class="screen-header-ornament">✦ ✡ ✦</span>
+        <div class="screen-header-title">Yahrzeits · יארצייט</div>
+      </div>
+      <div class="card" id="yahrzeitCard">
+        <span class="card-corner tl">✦</span>
+        <span class="card-corner br">✦</span>
+        <div class="card-label" id="yahrzeitDateLabel">Today's Yahrzeits · יארצייטים של היום</div>
+        <div class="gold-rule"></div>
+        <div id="yahrzeitContent">
+          <div class="shimmer no-ytz">Loading · טוען…</div>
+        </div>
+      </div>
+
+      <div class="card" style="background:rgba(201,168,76,.03);">
+        <div class="card-label">About Yahrzeit Tehillim</div>
+        <div style="font-size:.7rem;color:var(--warm-dim);line-height:1.7;">
+          The custom is to recite Psalm 119 — תהלים קי״ט — sections corresponding to each Hebrew letter of the Tzadik's name.
+          המנהג לומר קטעי תהלים קי״ט המתאימים לאותיות שם הצדיק. תהלים קי״ט הוא אקרוסטיכון של כ״ב אותיות × ח׳ פסוקים.
+        </div>
+      </div>
+
+      <div class="card" style="background:rgba(201,168,76,.05);text-align:center;padding:1rem 1rem .9rem;">
+        <div style="font-size:.58rem;color:var(--warm-dim);letter-spacing:.1em;margin-bottom:.35rem;text-transform:uppercase;">Full Yahrzeit Database · מאגר יארצייט מלא</div>
+        <div style="font-size:.88rem;font-weight:700;color:var(--gold);letter-spacing:.04em;margin-bottom:.18rem;">🕯 NerTzaddik.com</div>
+        <div style="font-size:.63rem;color:var(--warm-dim);margin-bottom:.75rem;line-height:1.5;">Me'oros HaTzadikim · מְאוֹרוֹת הַצַּדִּיקִים</div>
+        <a href="https://nertzaddik.com/home/" target="_blank" rel="noopener"
+           style="display:inline-block;background:var(--gold);color:#1a120a;font-size:.68rem;font-weight:700;padding:.42rem 1rem;border-radius:20px;text-decoration:none;letter-spacing:.06em;">
+          VIEW TODAY'S FULL LIST · רשימה מלאה →
+        </a>
+      </div>
+    </div>
+
+    <!-- Screen 5: Shop -->
+    <div class="screen" id="screen-shop">
+      <div class="screen-header">
+        <span class="screen-header-ornament">✦ 🕯 ✦</span>
+        <div class="screen-header-title">Judaica Shop · חנות יודאיקה</div>
+      </div>
+
+      <!-- Currency toggle -->
+      <div class="shop-currency-bar">
+        <span class="shop-currency-label">Currency · מטבע</span>
+        <div class="shop-currency-btns">
+          <button class="cur-btn active" onclick="setCurrency('ILS')">₪ ILS</button>
+          <button class="cur-btn" onclick="setCurrency('USD')">$ USD</button>
+        </div>
+      </div>
+
+      <!-- Product grid -->
+      <div id="shopGrid" class="shop-grid">
+        <div class="shimmer shop-loading">Loading products · טוען מוצרים…</div>
+      </div>
+
+      <div class="card" style="background:rgba(201,168,76,.03);text-align:center;padding:.8rem;margin:.75rem .8rem 0;">
+        <div style="font-size:.6rem;color:var(--warm-dim);line-height:1.8;">
+          Prices shown are indicative · המחירים המוצגים הם אינדיקטיביים<br>
+          Final invoice sent by email · חשבונית סופית תישלח במייל
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /screens -->
+
+  <!-- Floating Cart Button -->
+  <button class="float-cart-btn" id="floatCartBtn" onclick="openCartModal()">
+    <span class="float-cart-icon">🛒</span>
+    <span id="floatCartLabel">Cart · עגלה</span>
+    <span class="float-cart-count" id="floatCartCount">0</span>
+  </button>
+
+  <!-- Cart Modal -->
+  <div class="cart-modal-overlay" id="cartModalOverlay" onclick="handleOverlayClick(event)">
+    <div class="cart-modal" id="cartModal">
+      <div class="cart-modal-handle"></div>
+      <div class="cart-modal-title">Your Cart · עגלת הקניות</div>
+      <div class="cart-modal-subtitle">Review your order before sending</div>
+
+      <div class="cart-section-label">Items · פריטים</div>
+      <div id="modalCartItems"></div>
+
+      <div class="modal-total-row">
+        <span class="modal-total-label">Total · סה״כ</span>
+        <span class="modal-total-val" id="modalCartTotal">—</span>
+      </div>
+
+      <div class="cart-divider"></div>
+
+      <div class="cart-section-label">Your Details · פרטי הלקוח</div>
+
+      <div class="cust-row">
+        <div class="cust-field">
+          <label class="cust-label">First Name · שם פרטי</label>
+          <input class="cust-input" id="custFirst" type="text" placeholder="Moshe" autocomplete="given-name">
+          <div class="error-msg" id="errFirst">Required · שדה חובה</div>
+        </div>
+        <div class="cust-field">
+          <label class="cust-label">Last Name · שם משפחה</label>
+          <input class="cust-input" id="custLast" type="text" placeholder="Cohen" autocomplete="family-name">
+          <div class="error-msg" id="errLast">Required · שדה חובה</div>
+        </div>
+      </div>
+
+      <div class="cust-field">
+        <label class="cust-label">Email · דוא״ל</label>
+        <input class="cust-input" id="custEmail" type="email" placeholder="moshe@example.com" autocomplete="email">
+        <div class="error-msg" id="errEmail">Valid email required · נא להזין דוא״ל תקין</div>
+      </div>
+
+      <div class="cust-field">
+        <label class="cust-label">Phone · טלפון</label>
+        <input class="cust-input" id="custPhone" type="tel" placeholder="+972 50 000 0000" autocomplete="tel">
+        <div class="error-msg" id="errPhone">Required · שדה חובה</div>
+      </div>
+
+      <div class="cust-field">
+        <label class="cust-label">Delivery Address · כתובת למשלוח</label>
+        <input class="cust-input" id="custAddr1" type="text" placeholder="Street & number · רחוב ומספר" autocomplete="address-line1" style="margin-bottom:.4rem;">
+        <input class="cust-input" id="custAddr2" type="text" placeholder="City, Country · עיר, מדינה" autocomplete="address-level2">
+        <div class="error-msg" id="errAddr">Required · שדה חובה</div>
+      </div>
+
+      <div class="cust-field">
+        <label class="cust-label">Note to seller (optional) · הערה למוכר</label>
+        <textarea class="cust-input" id="custNote" rows="2" placeholder="Any special requests..." style="resize:none;"></textarea>
+      </div>
+
+      <button class="modal-checkout-btn" id="modalCheckoutBtn" onclick="submitOrder()">
+        ✉ Send Order · שלח הזמנה
+      </button>
+      <button class="modal-clear-btn" onclick="clearCartAndClose()">Clear Cart · נקה עגלה 🗑</button>
+
+      <div class="modal-note">
+        You will receive a confirmation email once your order is reviewed.<br>
+        תקבל אישור במייל לאחר בדיקת ההזמנה · Payment link sent after confirmation.
+      </div>
+    </div>
+
+    <!-- Success view -->
+    <div class="cart-success" id="cartSuccess">
+      <div class="success-icon">&#x2709;&#xFE0F;</div>
+      <div class="success-title">Order Sent! &middot; &#x05D4;&#x05D6;&#x05DE;&#x05E0;&#x05D4; &#x05E0;&#x05E9;&#x05DC;&#x05D7;&#x05D4;</div>
+      <div class="success-order-num">Order # <span id="successOrderNum"></span></div>
+      <div class="success-msg">
+        Your order has been received.<br>
+        <span style="color:var(--gold);">Doval</span> will be in touch shortly to confirm and send a payment link.
+      </div>
+      <div class="success-msg" style="direction:rtl;font-family:'Frank Ruhl Libre',serif;margin-top:.5rem;">
+        &#x05D4;&#x05D4;&#x05D6;&#x05DE;&#x05E0;&#x05D4; &#x05E9;&#x05DC;&#x05DA; &#x05D4;&#x05EA;&#x05E7;&#x05D1;&#x05DC;&#x05D4; &middot; &#x05D3;&#x05D5;&#x05D1;&#x05DC; &#x05D9;&#x05E6;&#x05D5;&#x05E8; &#x05E7;&#x05E9;&#x05E8; &#x05D1;&#x05E7;&#x05E8;&#x05D5;&#x05D1; &#x05DC;&#x05D0;&#x05D9;&#x05E9;&#x05D5;&#x05E8; &#x05D5;&#x05E9;&#x05DC;&#x05D9;&#x05D7;&#x05EA; &#x05E7;&#x05D9;&#x05E9;&#x05D5;&#x05E8; &#x05DC;&#x05EA;&#x05E9;&#x05DC;&#x05D5;&#x05DD;
+      </div>
+      <div class="success-nav-label">Where would you like to go?</div>
+      <div class="success-nav-btns">
+        <button class="success-nav-btn" onclick="resetAfterOrder('date')">&#x1F4C5; Date</button>
+        <button class="success-nav-btn" onclick="resetAfterOrder('shabbat')">&#x1F56F;&#xFE0F; Shabbat</button>
+        <button class="success-nav-btn" onclick="resetAfterOrder('parasha')">&#x1F4D6; Parasha</button>
+        <button class="success-nav-btn" onclick="resetAfterOrder('shop')">&#x1F6CD;&#xFE0F; Shop</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab Bar -->
+  <div class="tab-bar">
+    <button class="tab active" onclick="switchTab('date')" id="tab-date">
+      <span class="tab-icon">📅</span>
+      <span class="tab-label">Date · תאריך</span>
+    </button>
+    <button class="tab" onclick="switchTab('shabbat')" id="tab-shabbat">
+      <span class="tab-icon">🕯️</span>
+      <span class="tab-label">Shabbat · שבת</span>
+    </button>
+    <button class="tab" onclick="switchTab('parasha')" id="tab-parasha">
+      <span class="tab-icon">📖</span>
+      <span class="tab-label">Parasha · פרשה</span>
+    </button>
+    <button class="tab" onclick="switchTab('yahrzeit')" id="tab-yahrzeit">
+      <span class="tab-icon">✡️</span>
+      <span class="tab-label">Yahrzeit · יארצייט</span>
+    </button>
+    <button class="tab" onclick="switchTab('shop')" id="tab-shop">
+      <span class="tab-icon">🛍️</span>
+      <span class="tab-label">Shop · חנות</span>
+    </button>
+  </div>
+
+</div><!-- /phone -->
+
+<script>
+'use strict';
+
+// ── Tab Navigation ────────────────────────────────────────────────────────────
+let activeTab = 'date';
+function switchTab(name) {
+  if (name === activeTab) return;
+  const prev = document.getElementById('screen-' + activeTab);
+  const next = document.getElementById('screen-' + name);
+  prev.classList.remove('active');
+  next.classList.add('active');
+  document.getElementById('tab-' + activeTab).classList.remove('active');
+  document.getElementById('tab-' + name).classList.add('active');
+  activeTab = name;
+  if (name === 'shop' && typeof loadShopProducts === 'function' && !shopProducts.length) loadShopProducts();
+}
+
+// ── Hebrew Calendar ───────────────────────────────────────────────────────────
+const HM_HE=['ניסן','אייר','סיוון','תמוז','אב','אלול','תשרי','חשון','כסלו','טבת','שבט','אדר','אדר ב׳'];
+const HM_EN=['Nisan','Iyar','Sivan','Tammuz','Av','Elul','Tishrei','Cheshvan','Kislev','Tevet','Shevat','Adar','Adar II'];
+function toJDN(y,m,d){const a=Math.floor((14-m)/12),yy=y+4800-a,mm=m+12*a-3;return d+Math.floor((153*mm+2)/5)+365*yy+Math.floor(yy/4)-Math.floor(yy/100)+Math.floor(yy/400)-32045;}
+const EPOCH=347997;
+function isLeap(y){return(7*y+1)%19<7;}
+function elapsed(y){const m=Math.floor((235*y-234)/19),p=12084+13753*m;let d=m*29+Math.floor(p/25920);if((3*(d+1))%7<3)d++;return d;}
+function yStart(y){return EPOCH+elapsed(y);}
+function yLen(y){return yStart(y+1)-yStart(y);}
+function dimH(mo,y){const f=[30,29,30,29,30,29,30,29,30,29,30,29,29];let d=f[mo-1];const l=yLen(y)%10;if(mo===8&&l===5)d=30;if(mo===9&&l===3)d=29;return d;}
+function jdnToHeb(jdn){let yr=Math.floor((jdn-EPOCH)*19/6935)+1;while(yStart(yr+1)<=jdn)yr++;while(yStart(yr)>jdn)yr--;let doy=jdn-yStart(yr)+1;const lp=isLeap(yr),ord=[7,8,9,10,11,12,13,1,2,3,4,5,6];let mo=7;for(const m of ord){if(m===13&&!lp)continue;const d=dimH(m,yr);if(doy<=d){mo=m;break;}doy-=d;}return{year:yr,month:mo,day:doy};}
+function toHNum(n){const H=['','ק','ר','ש','ת','תק','תר','תש','תת','תתק'],T=['','י','כ','ל','מ','נ','ס','ע','פ','צ'],O=['','א','ב','ג','ד','ה','ו','ז','ח','ט'];let h='',r=n;h+=H[Math.floor(r/100)];r%=100;if(r===15){h+='טו';r=0;}else if(r===16){h+='טז';r=0;}else{h+=T[Math.floor(r/10)];r%=10;}h+=O[r];return h.length===1?h+'׳':h.slice(0,-1)+'״'+h.slice(-1);}
+
+// ── Sunset / Sun-at-angle ─────────────────────────────────────────────────────
+// angle: degrees below horizon (0.833=sunset, 8.5=tzeit/3-stars, 16.1=Rabbeinu Tam)
+function sunAtAngle(lat,lon,date,angle){
+  const rad=Math.PI/180;
+  const s=new Date(date.getFullYear(),0,0);
+  const doy=Math.floor((date-s)/86400000);
+  const lh=lon/15;
+  const t=doy+((18-lh)/24), M=0.9856*t-3.289;
+  const L=((M+1.916*Math.sin(M*rad)+0.02*Math.sin(2*M*rad)+282.634)%360+360)%360;
+  let RA=(Math.atan(0.91764*Math.tan(L*rad))/rad+360)%360;
+  RA=(RA+(Math.floor(L/90)*90)-(Math.floor(RA/90)*90))/15;
+  const sd=0.39782*Math.sin(L*rad), cd=Math.cos(Math.asin(sd));
+  const cosZ=Math.cos((90+angle)*rad);
+  const cH=(cosZ-sd*Math.sin(lat*rad))/(cd*Math.cos(lat*rad));
+  if(cH>1||cH<-1) return null;
+  const H=(Math.acos(cH)/rad)/15;
+  const localT=((H+RA-0.06571*t-6.622)%24+24)%24;
+  const utcH=((localT-lh)%24+24)%24;
+  return new Date(Date.UTC(date.getFullYear(),date.getMonth(),date.getDate(),
+    Math.floor(utcH),Math.round((utcH%1)*60)));
+}
+function sunsetUTC(lat,lon,date){ return sunAtAngle(lat,lon,date,0.833); }
+
+// ── Parasha Table ─────────────────────────────────────────────────────────────
+const PARASHA_TABLE = {
+  '2025-W38':['Nitzavim-Vayeilech','נצבים-וילך','דברים 29:9–31:30','ישעיהו 61:10–63:9'],
+  '2025-W39':["Ha'azinu",'האזינו','דברים 32:1–52','שמואל א 22:1–51'],
+  '2025-W41':['Vezot Haberakhah','וזאת הברכה','דברים 33:1–34:12','יהושע 1:1–18'],
+  '2025-W42':['Bereshit','בראשית','בראשית 1:1–6:8','ישעיהו 42:5–43:10'],
+  '2025-W43':['Noach','נח','בראשית 6:9–11:32','ישעיהו 54:1–55:5'],
+  '2025-W44':['Lech-Lecha','לך לך','בראשית 12:1–17:27','ישעיהו 40:27–41:16'],
+  '2025-W45':['Vayera','וירא','בראשית 18:1–22:24','מלכים א 4:1–37'],
+  '2025-W46':['Chayei Sara','חיי שרה','בראשית 23:1–25:18','מלכים א 1:1–31'],
+  '2025-W47':['Toldot','תולדות','בראשית 25:19–28:9','מלאכי 1:1–2:7'],
+  '2025-W48':['Vayetzei','ויצא','בראשית 28:10–32:3','הושע 12:13–14:10'],
+  '2025-W49':['Vayishlach','וישלח','בראשית 32:4–36:43','הושע 11:7–12:12'],
+  '2025-W50':['Vayeshev','וישב','בראשית 37:1–40:23','עמוס 2:6–3:8'],
+  '2025-W51':['Miketz','מקץ','בראשית 41:1–44:17','מלכים א 3:15–4:1'],
+  '2025-W52':['Vayigash','ויגש','בראשית 44:18–47:27','יחזקאל 37:15–28'],
+  '2026-W01':['Vayechi','ויחי','בראשית 47:28–50:26','מלכים א 2:1–12'],
+  '2026-W02':['Shemot','שמות','שמות 1:1–6:1','ישעיהו 27:6–28:13'],
+  '2026-W03':["Va'era",'וארא','שמות 6:2–9:35','יחזקאל 28:25–29:21'],
+  '2026-W04':['Bo','בא','שמות 10:1–13:16','ירמיהו 46:13–28'],
+  '2026-W05':['Beshalach','בשלח','שמות 13:17–17:16','שופטים 4:4–5:31'],
+  '2026-W06':['Yitro','יתרו','שמות 18:1–20:23','ישעיהו 6:1–7:6'],
+  '2026-W07':['Mishpatim','משפטים','שמות 21:1–24:18','ירמיהו 34:8–22'],
+  '2026-W08':['Terumah','תרומה','שמות 25:1–27:19','מלכים א 5:26–6:13'],
+  '2026-W09':['Tetzaveh','תצוה','שמות 27:20–30:10','שמואל א 15:2–34'],
+  '2026-W10':['Ki Tisa','כי תשא','שמות 30:11–34:35','מלכים א 18:1–39'],
+  '2026-W11':['Vayakhel-Pekudei','ויקהל-פקודי','שמות 35:1–40:38','מלכים א 7:40–50'],
+  '2026-W12':['Vayikra','ויקרא','ויקרא 1:1–5:26','ישעיהו 43:21–44:23'],
+  '2026-W13':['Tzav','צו','ויקרא 6:1–8:36','ירמיהו 7:21–8:3'],
+  '2026-W14':['Shemini','שמיני','ויקרא 9:1–11:47','שמואל א 6:1–7:17'],
+  '2026-W15':['Tazria-Metzora','תזריע-מצורע','ויקרא 12:1–15:33','מלכים א 7:3–20'],
+  '2026-W16':['Achrei Mot-Kedoshim','אחרי מות-קדושים','ויקרא 16:1–20:27','עמוס 9:7–15'],
+  '2026-W17':['Emor','אמור','ויקרא 21:1–24:23','יחזקאל 44:15–31'],
+  '2026-W18':['Behar-Bechukotai','בהר-בחקותי','ויקרא 25:1–27:34','ירמיהו 16:19–17:14'],
+  '2026-W19':['Bamidbar','במדבר','במדבר 1:1–4:20','הושע 2:1–22'],
+  '2026-W20':['Nasso','נשא','במדבר 4:21–7:89','שופטים 13:2–25'],
+  '2026-W21':["Beha'alotcha",'בהעלותך','במדבר 8:1–12:16','זכריה 2:14–4:7'],
+  '2026-W22':['Shelach','שלח','במדבר 13:1–15:41','יהושע 2:1–24'],
+  '2026-W23':['Korach','קרח','במדבר 16:1–18:32','שמואל א 11:14–12:22'],
+  '2026-W24':['Chukat','חקת','במדבר 19:1–22:1','שופטים 11:1–33'],
+  '2026-W25':['Balak','בלק','במדבר 22:2–25:9','מיכה 5:6–6:8'],
+  '2026-W26':['Pinchas','פינחס','במדבר 25:10–30:1','מלכים א 18:46–19:21'],
+  '2026-W27':['Matot-Masei','מטות-מסעי','במדבר 30:2–36:13','ירמיהו 2:4–28'],
+  '2026-W28':['Devarim','דברים','דברים 1:1–3:22','ישעיהו 1:1–27'],
+  '2026-W29':["Va'etchanan",'ואתחנן','דברים 3:23–7:11','ישעיהו 40:1–26'],
+  '2026-W30':['Eikev','עקב','דברים 7:12–11:25','ישעיהו 49:14–51:3'],
+  '2026-W31':["Re'eh",'ראה','דברים 11:26–16:17','ישעיהו 54:11–55:5'],
+  '2026-W32':['Shoftim','שופטים','דברים 16:18–21:9','ישעיהו 51:12–52:12'],
+  '2026-W33':['Ki Teitzei','כי תצא','דברים 21:10–25:19','ישעיהו 54:1–10'],
+  '2026-W34':['Ki Tavo','כי תבוא','דברים 26:1–29:8','ישעיהו 60:1–22'],
+  '2026-W35':['Nitzavim','נצבים','דברים 29:9–30:20','ישעיהו 61:10–63:9'],
+};
+function getISOWeekKey(date){
+  const d=new Date(date),day=d.getDay(),daysToSat=(6-day+7)%7;
+  d.setDate(d.getDate()+daysToSat);
+  const jan4=new Date(d.getFullYear(),0,4),sw=new Date(jan4);
+  sw.setDate(jan4.getDate()-((jan4.getDay()+6)%7));
+  const wn=Math.floor((d-sw)/(7*86400000))+1;
+  return `${d.getFullYear()}-W${String(wn).padStart(2,'0')}`;
+}
+function getOfflineParasha(){
+  const p=PARASHA_TABLE[getISOWeekKey(new Date())];
+  return p?{name:p[0],hebrew:p[1],torah:p[2],haftarah:p[3]}:null;
+}
+
+// ── Yahrzeit Table ────────────────────────────────────────────────────────────
+// Psalm 119 — all 11 sections used in the yahrzeit app
+// Hebrew text (JPS/Artscroll style), English (JPS 1985)
+// Each entry: [hebrewVerse, englishVerse]
+
+const PSALM119 = {
+  // א ALEF (1–8)
+  1:  ['אַשְׁרֵי תְמִימֵי־דָרֶךְ הַהֹלְכִים בְּתוֹרַת יְהוָה', 'Happy are those whose way is blameless, who follow the teaching of the LORD.'],
+  2:  ['אַשְׁרֵי נֹצְרֵי עֵדֹתָיו בְּכָל־לֵב יִדְרְשׁוּהוּ', 'Happy are those who observe His decrees, who turn to Him wholeheartedly.'],
+  3:  ['אַף לֹא־פָעֲלוּ עַוְלָה בִּדְרָכָיו הָלָכוּ', 'They have done no wrong, but have walked in His ways.'],
+  4:  ['אַתָּה צִוִּיתָה פִקֻּדֶיךָ לִשְׁמֹר מְאֹד', 'You have commanded that Your precepts be kept diligently.'],
+  5:  ['אַחֲלַי יִכֹּנוּ דְרָכָי לִשְׁמֹר חֻקֶּיךָ', 'Would that my ways were firm in keeping Your laws.'],
+  6:  ['אָז לֹא־אֵבוֹשׁ בְּהַבִּיטִי אֶל־כָּל־מִצְוֹתֶיךָ', 'Then I would not be ashamed when I regard all Your commandments.'],
+  7:  ['אוֹדְךָ בְּיֹשֶׁר לֵבָב בְּלָמְדִי מִשְׁפְּטֵי צִדְקֶךָ', 'I will praise You with a sincere heart as I learn Your just laws.'],
+  8:  ['אֶת־חֻקֶּיךָ אֶשְׁמֹר אַל־תַּעַזְבֵנִי עַד־מְאֹד', 'I will keep Your laws; do not utterly forsake me.'],
+
+  // ד DALET (25–32)
+  25: ['דָּבְקָה לֶעָפָר נַפְשִׁי חַיֵּנִי כִּדְבָרֶךָ', 'My soul cleaves to the dust; revive me in accordance with Your word.'],
+  26: ['דְּרָכַי סִפַּרְתִּי וַתַּעֲנֵנִי לַמְּדֵנִי חֻקֶּיךָ', 'I have declared my ways and You answered me; teach me Your laws.'],
+  27: ['דֶּרֶךְ פִּקּוּדֶיךָ הֲבִינֵנִי וְאָשִׂיחָה בְּנִפְלְאוֹתֶיךָ', 'Make me understand the way of Your precepts, that I may speak of Your wondrous acts.'],
+  28: ['דָּלְפָה נַפְשִׁי מִתּוּגָה קַיְּמֵנִי כִּדְבָרֶךָ', 'My soul is utterly spent; sustain me according to Your word.'],
+  29: ['דֶּרֶךְ־שֶׁקֶר הָסֵר מִמֶּנִּי וְתוֹרָתְךָ חָנֵּנִי', 'Remove the path of falsehood from me; and graciously grant me Your Torah.'],
+  30: ['דֶּרֶךְ־אֱמוּנָה בָחַרְתִּי מִשְׁפָּטֶיךָ שִׁוִּיתִי', 'I have chosen the path of faithfulness; I have set Your rules before me.'],
+  31: ['דָּבַקְתִּי בְעֵדְוֹתֶיךָ יְהוָה אַל־תְּבִישֵׁנִי', 'I cling to Your testimonies; O LORD, do not put me to shame.'],
+  32: ['דֶּרֶךְ־מִצְוֹתֶיךָ אָרוּץ כִּי תַרְחִיב לִבִּי', 'I run in the way of Your commandments, for You broaden my understanding.'],
+
+  // ה HEY (33–40)
+  33: ['הוֹרֵנִי יְהוָה דֶּרֶךְ חֻקֶּיךָ וְאֶצְּרֶנָּה עֵקֶב', 'Teach me, O LORD, the way of Your laws; I will observe it to the utmost.'],
+  34: ['הֲבִינֵנִי וְאֶצְּרָה תוֹרָתֶךָ וְאֶשְׁמְרֶנָּה בְכָל־לֵב', 'Give me understanding, that I may observe Your Torah and keep it wholeheartedly.'],
+  35: ['הַדְרִיכֵנִי בִּנְתִיב מִצְוֹתֶיךָ כִּי־בוֹ חָפָצְתִּי', 'Lead me in the path of Your commandments, for that is my desire.'],
+  36: ['הַט־לִבִּי אֶל־עֵדְוֹתֶיךָ וְאַל אֶל־בָּצַע', 'Turn my heart to Your decrees and not to love of gain.'],
+  37: ['הַעֲבֵר עֵינַי מֵרְאוֹת שָׁוְא בִּדְרָכֶךָ חַיֵּנִי', 'Avert my eyes from seeing falsehood; by Your ways give me life.'],
+  38: ['הָקֵם לְעַבְדְּךָ אִמְרָתֶךָ אֲשֶׁר לְיִרְאָתֶךָ', 'Fulfill Your promise to Your servant, which is for those who fear You.'],
+  39: ['הַעֲבֵר חֶרְפָּתִי אֲשֶׁר יָגֹרְתִּי כִּי מִשְׁפָּטֶיךָ טוֹבִים', 'Remove the reproach that I dread, for Your rules are good.'],
+  40: ['הִנֵּה תָאַבְתִּי לְפִקֻּדֶיךָ בְּצִדְקָתְךָ חַיֵּנִי', 'See, I have longed for Your precepts; give me life through Your righteousness.'],
+
+  // ו VAV (41–48)
+  41: ['וִיבֹאֻנִי חֲסָדֶיךָ יְהוָה תְּשׁוּעָתְךָ כְּאִמְרָתֶךָ', 'Let Your steadfast love reach me, O LORD, Your salvation, as You have promised.'],
+  42: ['וְאֶעֱנֶה חֹרְפִי דָבָר כִּי־בָטַחְתִּי בִּדְבָרֶךָ', 'I will have an answer for those who taunt me, for I trust in Your word.'],
+  43: ['וְאַל־תַּצֵּל מִפִּי דְבַר־אֱמֶת עַד־מְאֹד כִּי לְמִשְׁפָּטֶךָ יִחָלְתִּי', 'Do not utterly remove the true word from my mouth, for I put hope in Your rules.'],
+  44: ['וְאֶשְׁמְרָה תוֹרָתְךָ תָמִיד לְעוֹלָם וָעֶד', 'I will always keep Your Torah, forever and ever.'],
+  45: ['וְאֶתְהַלְּכָה בָרְחָבָה כִּי פִקֻּדֶיךָ דָרָשְׁתִּי', 'I will walk about at ease, for I have sought Your precepts.'],
+  46: ['וַאֲדַבְּרָה בְעֵדֹתֶיךָ נֶגֶד מְלָכִים וְלֹא אֵבוֹשׁ', 'I will speak of Your decrees before kings without being ashamed.'],
+  47: ['וְאֶשְׁתַּעֲשַׁע בְּמִצְוֹתֶיךָ אֲשֶׁר אָהָבְתִּי', 'I will delight in Your commandments, which I love.'],
+  48: ['וְאֶשָּׂא־כַפַּי אֶל־מִצְוֹתֶיךָ אֲשֶׁר אָהָבְתִּי וְאָשִׂיחָה בְחֻקֶּיךָ', 'I will lift up my hands to Your commandments, which I love, and will study Your laws.'],
+
+  // ח CHET (57–64)
+  57: ['חֶלְקִי יְהוָה אָמַרְתִּי לִשְׁמֹר דְּבָרֶיךָ', 'The LORD is my portion; I have resolved to keep Your words.'],
+  58: ['חִלִּיתִי פָנֶיךָ בְכָל־לֵב חָנֵּנִי כְּאִמְרָתֶךָ', 'I have implored You with all my heart; have mercy on me in accordance with Your promise.'],
+  59: ['חִשַּׁבְתִּי דְרָכָי וָאָשִׁיבָה רַגְלַי אֶל־עֵדֹתֶיךָ', 'I have considered my ways and have turned my feet back to Your testimonies.'],
+  60: ['חַשְׁתִּי וְלֹא הִתְמַהְמָהְתִּי לִשְׁמֹר מִצְוֹתֶיךָ', 'I have hastened and have not delayed to keep Your commandments.'],
+  61: ['חֶבְלֵי רְשָׁעִים עִוְּדֻנִי תּוֹרָתְךָ לֹא שָׁכָחְתִּי', 'Though the bonds of the wicked are coiled around me, I have not forgotten Your Torah.'],
+  62: ['חֲצוֹת לַיְלָה אָקוּם לְהוֹדוֹת לָךְ עַל מִשְׁפְּטֵי צִדְקֶךָ', 'I arise at midnight to praise You for Your righteous rules.'],
+  63: ['חָבֵר אָנִי לְכָל אֲשֶׁר יְרֵאוּךָ וּלְשֹׁמְרֵי פִּקּוּדֶיךָ', 'I am a companion to all who fear You, to those who keep Your precepts.'],
+  64: ['חַסְדְּךָ יְהוָה מָלְאָה הָאָרֶץ חֻקֶּיךָ לַמְּדֵנִי', 'The earth, O LORD, is filled with Your steadfast love; teach me Your laws.'],
+
+  // י YUD (73–80)
+  73: ['יָדֶיךָ עָשׂוּנִי וַיְכוֹנְנוּנִי הֲבִינֵנִי וְאֶלְמְדָה מִצְוֹתֶיךָ', 'Your hands made me and fashioned me; give me understanding to learn Your commandments.'],
+  74: ['יְרֵאֶיךָ יִרְאוּנִי וְיִשְׂמָחוּ כִּי לִדְבָרְךָ יִחָלְתִּי', 'Those who fear You will see me and rejoice, for I have put my hope in Your word.'],
+  75: ['יָדַעְתִּי יְהוָה כִּי־צֶדֶק מִשְׁפָּטֶיךָ וֶאֱמוּנָה עִנִּיתָנִי', 'I know, O LORD, that Your rules are righteous; rightly have You afflicted me.'],
+  76: ['יְהִי־נָא חַסְדְּךָ לְנַחֲמֵנִי כְּאִמְרָתְךָ לְעַבְדֶּךָ', 'May Your steadfast love comfort me, as You promised Your servant.'],
+  77: ['יְבֹאוּנִי רַחֲמֶיךָ וְאֶחְיֶה כִּי תוֹרָתְךָ שַׁעֲשֻׁעָי', 'May Your mercies come to me so that I may live, for Your Torah is my delight.'],
+  78: ['יֵבֹשׁוּ זֵדִים כִּי שֶׁקֶר עִוְּתוּנִי אֲנִי אָשִׂיחַ בְּפִקּוּדֶיךָ', 'Let the arrogant be put to shame, for they have wronged me with lies; I meditate on Your precepts.'],
+  79: ['יָשׁוּבוּ לִי יְרֵאֶיךָ וְיֹדְעֵי עֵדֹתֶיךָ', 'Let those who fear You, those who know Your testimonies, return to me.'],
+  80: ['יְהִי־לִבִּי תָמִים בְּחֻקֶּיךָ לְמַעַן לֹא אֵבוֹשׁ', 'May my heart be blameless in Your laws, so that I may not be ashamed.'],
+
+  // מ MEM (97–104)
+  97: ['מָה־אָהַבְתִּי תוֹרָתֶךָ כָּל־הַיּוֹם הִיא שִׂיחָתִי', 'O how I love Your Torah! It is my meditation all day long.'],
+  98: ['מֵאֹיְבַי תְּחַכְּמֵנִי מִצְוֹתֶךָ כִּי לְעוֹלָם הִיא לִי', 'Your commandments make me wiser than my enemies, for they are ever with me.'],
+  99: ['מִכָּל־מְלַמְּדַי הִשְׂכַּלְתִּי כִּי עֵדְוֹתֶיךָ שִׂיחָה לִי', 'I have more insight than all my teachers, for Your testimonies are my meditation.'],
+  100: ['מִזְּקֵנִים אֶתְבּוֹנָן כִּי פִקּוּדֶיךָ נָצָרְתִּי', 'I understand more than the elders, for I have kept Your precepts.'],
+  101: ['מִכָּל־אֹרַח רָע כָּלִאתִי רַגְלָי לְמַעַן אֶשְׁמֹר דְּבָרֶךָ', 'I have restrained my feet from every evil path in order to keep Your word.'],
+  102: ['מִמִּשְׁפָּטֶיךָ לֹא סָרְתִּי כִּי אַתָּה הוֹרֵתָנִי', 'I have not departed from Your rules, for You have instructed me.'],
+  103: ['מַה־נִּמְלְצוּ לְחִכִּי אִמְרָתֶךָ מִדְּבַשׁ לְפִי', 'How pleasing is Your word to my palate, sweeter than honey to my mouth.'],
+  104: ['מִפִּקּוּדֶיךָ אֶתְבּוֹנָן עַל־כֵּן שָׂנֵאתִי כָּל־אֹרַח שָׁקֶר', 'From Your precepts I gain understanding; therefore I hate every false way.'],
+
+  // נ NUN (105–112)
+  105: ['נֵר־לְרַגְלִי דְבָרֶךָ וְאוֹר לִנְתִיבָתִי', 'Your word is a lamp to my feet and a light for my path.'],
+  106: ['נִשְׁבַּעְתִּי וָאֲקַיֵּמָה לִשְׁמֹר מִשְׁפְּטֵי צִדְקֶךָ', 'I have sworn, and will fulfill it, to keep Your righteous rules.'],
+  107: ['נַעֲנֵיתִי עַד־מְאֹד יְהוָה חַיֵּנִי כִדְבָרֶךָ', 'I am very much afflicted; O LORD, give me life according to Your word.'],
+  108: ['נִדְבוֹת פִּי רְצֵה נָא יְהוָה וּמִשְׁפָּטֶיךָ לַמְּדֵנִי', 'Accept the freewill offerings of my mouth, O LORD, and teach me Your rules.'],
+  109: ['נַפְשִׁי בְכַפִּי תָמִיד וְתוֹרָתְךָ לֹא שָׁכָחְתִּי', 'My life is in my hands always, yet I have not forgotten Your Torah.'],
+  110: ['נָתְנוּ רְשָׁעִים פַּח לִי וּמִפִּקּוּדֶיךָ לֹא תָעִיתִי', 'The wicked have laid a snare for me, but I have not strayed from Your precepts.'],
+  111: ['נָחַלְתִּי עֵדְוֹתֶיךָ לְעוֹלָם כִּי שְׂשׂוֹן לִבִּי הֵמָּה', 'Your testimonies are my heritage forever; they are the joy of my heart.'],
+  112: ['נָטִיתִי לִבִּי לַעֲשׂוֹת חֻקֶּיךָ לְעוֹלָם עֵקֶב', 'I have inclined my heart to perform Your laws forever, to the very end.'],
+
+  // ס SAMECH (113–120)
+  113: ['סֵעֲפִים שָׂנֵאתִי וְתוֹרָתְךָ אָהָבְתִּי', 'I hate those who are of two minds, and I love Your Torah.'],
+  114: ['סִתְרִי וּמָגִנִּי אָתָּה לִדְבָרְךָ יִחָלְתִּי', 'You are my shelter and my shield; I have put my hope in Your word.'],
+  115: ['סוּרוּ מִמֶּנִּי מְרֵעִים וְאֶצְּרָה מִצְוֹת אֱלֹהָי', 'Depart from me, you evildoers, that I may keep the commandments of my God.'],
+  116: ['סָמְכֵנִי כְאִמְרָתְךָ וְאֶחְיֶה וְאַל־תְּבִישֵׁנִי מִשִּׂבְרִי', 'Support me as You promised, that I may live; do not let my hope be disappointed.'],
+  117: ['סְעָדֵנִי וְאִוָּשֵׁעָה וְאֶשְׁעָה בְחֻקֶּיךָ תָמִיד', 'Sustain me that I may be saved, and I will always find meaning in Your laws.'],
+  118: ['סָלִיתָ כָּל שׁוֹגִים מֵחֻקֶּיךָ כִּי שֶׁקֶר תַּרְמִיתָם', 'You reject all who stray from Your laws, for their deceit is in vain.'],
+  119: ['סִגִים הִשְׁבַּתָּ כָל רִשְׁעֵי אֶרֶץ לָכֵן אָהַבְתִּי עֵדֹתֶיךָ', 'You do away with all the wicked of the earth like dross; therefore I love Your testimonies.'],
+  120: ['סָמַר מִפַּחְדְּךָ בְשָׂרִי וּמִמִּשְׁפָּטֶיךָ יָרֵאתִי', 'My flesh shudders in awe of You; I am in dread of Your rules.'],
+
+  // פ PEH (129–136)
+  129: ['פְּלָאוֹת עֵדְוֹתֶיךָ עַל־כֵּן נְצָרָתַם נַפְשִׁי', 'Your testimonies are wondrous; therefore I observe them.'],
+  130: ['פֵּתַח דְּבָרֶיךָ יָאִיר מֵבִין פְּתָאיִם', 'The unfolding of Your words gives light; it makes the simple understand.'],
+  131: ['פִּי פָעַרְתִּי וָאֶשְׁאָפָה כִּי לְמִצְוֹתֶיךָ יָאָבְתִּי', 'I open my mouth and pant, longing for Your commandments.'],
+  132: ['פְּנֵה אֵלַי וְחָנֵּנִי כְּמִשְׁפָּט לְאֹהֲבֵי שְׁמֶךָ', 'Turn to me and have mercy on me, as is Your rule with those who love Your name.'],
+  133: ['פְּעָמַי הָכֵן בְּאִמְרָתֶךָ וְאַל תַּשְׁלֶט בִּי כָל אָוֶן', 'Make my steps firm through Your word; let no iniquity dominate me.'],
+  134: ['פְּדֵנִי מֵעֹשֶׁק אָדָם וְאֶשְׁמְרָה פִּקּוּדֶיךָ', 'Redeem me from human oppression, and I will keep Your precepts.'],
+  135: ['פָּנֶיךָ הָאֵר בְּעַבְדֶּךָ וְלַמְּדֵנִי אֶת חֻקֶּיךָ', 'Show favor to Your servant, and teach me Your laws.'],
+  136: ['פַּלְגֵי מַיִם יָרְדוּ עֵינָי עַל לֹא שָׁמְרוּ תוֹרָתֶךָ', 'My eyes shed streams of water because people do not keep Your Torah.'],
+
+  // צ TZADIK (137–144)
+  137: ['צַדִּיק אַתָּה יְהוָה וְיָשָׁר מִשְׁפָּטֶיךָ', 'You are righteous, O LORD, and Your rules are just.'],
+  138: ['צִוִּיתָ צֶדֶק עֵדֹתֶיךָ וֶאֱמוּנָה מְאֹד', 'You have ordained Your testimonies in righteousness and in all faithfulness.'],
+  139: ['צִמְּתַתְנִי קִנְאָתִי כִּי שָׁכְחוּ דְבָרֶיךָ צָרָי', 'My zeal consumes me, because my foes have forgotten Your words.'],
+  140: ['צְרוּפָה אִמְרָתְךָ מְאֹד וְעַבְדְּךָ אֲהֵבָהּ', 'Your word is very pure, and Your servant loves it.'],
+  141: ['צָעִיר אָנֹכִי וְנִבְזֶה פִּקֻּדֶיךָ לֹא שָׁכָחְתִּי', 'I am small and despised, yet I have not forgotten Your precepts.'],
+  142: ['צִדְקָתְךָ צֶדֶק לְעוֹלָם וְתוֹרָתְךָ אֱמֶת', 'Your righteousness is eternal, and Your Torah is truth.'],
+  143: ['צַר וּמָצוֹק מְצָאוּנִי מִצְוֹתֶיךָ שַׁעֲשֻׁעָי', 'Trouble and anguish have found me, yet Your commandments are my delight.'],
+  144: ['צֶדֶק עֵדֹתֶיךָ לְעוֹלָם הֲבִינֵנִי וְאֶחְיֶה', 'Your testimonies are righteous forever; give me understanding, that I may live.'],
+
+  // ש SHIN (161–168)
+  161: ['שָׂרִים רְדָפוּנִי חִנָּם וּמִדְּבָרְךָ פָּחַד לִבִּי', 'Princes have persecuted me without cause, but my heart stands in awe of Your word.'],
+  162: ['שָׂשׂ אָנֹכִי עַל אִמְרָתֶךָ כְּמוֹצֵא שָׁלָל רָב', 'I rejoice over Your promise as one who finds great spoil.'],
+  163: ['שֶׁקֶר שָׂנֵאתִי וַאֲתַעֵבָה תּוֹרָתְךָ אָהָבְתִּי', 'I hate and abhor falsehood; I love Your Torah.'],
+  164: ['שֶׁבַע בַּיּוֹם הִלַּלְתִּיךָ עַל מִשְׁפְּטֵי צִדְקֶךָ', 'Seven times a day I praise You for Your righteous rules.'],
+  165: ['שָׁלוֹם רָב לְאֹהֲבֵי תוֹרָתֶךָ וְאֵין לָמוֹ מִכְשׁוֹל', 'Those who love Your Torah have great peace; they have no stumbling block.'],
+  166: ['שִׂבַּרְתִּי לִישׁוּעָתְךָ יְהוָה וּמִצְוֹתֶיךָ עָשִׂיתִי', 'I hope for Your salvation, O LORD, and I carry out Your commandments.'],
+  167: ['שָׁמְרָה נַפְשִׁי עֵדֹתֶיךָ וָאֹהֲבֵם מְאֹד', 'My soul keeps Your testimonies and loves them intensely.'],
+  168: ['שָׁמַרְתִּי פִקּוּדֶיךָ וְעֵדֹתֶיךָ כִּי כָל דְּרָכַי נֶגְדֶּךָ', 'I keep Your precepts and testimonies, for all my ways are before You.'],
+};
+
+
+const YAHRZEIT_TABLE = {
+
+  // ── TISHREI ──
+  '3-Tishrei': [
+    { name: 'Fast of Gedaliah · צוֹם גְּדַלְיָה', years: '423 BCE',
+      bio: 'Commemorates the assassination of Gedaliah ben Achikam, the Jewish governor appointed by Babylon after the destruction of the First Temple. His murder extinguished the last ember of Jewish autonomy in the Land of Israel, and the remaining Jews fled to Egypt. The fast is observed on 3 Tishrei (or 4th when the 3rd falls on Shabbat).',
+      tomb: 'Mitzpah, Land of Israel', tehillim: [] }
+  ],
+  '10-Tishrei': [
+    { name: 'Yom Kippur · יוֹם כִּפּוּר', years: 'Eternal',
+      bio: 'The holiest day of the Jewish year — the Day of Atonement. G-d sealed the covenant of forgiveness with Israel and Moses descended with the Second Tablets. Jews fast for 25 hours, refrain from five afflictions, and spend the day in prayer, culminating in the Ne\'ilah service as the gates of heaven close. The Talmud states that Yom Kippur atones for sins between man and G-d.',
+      tomb: 'Heaven\'s Gates', tehillim: [] }
+  ],
+  '20-Tishrei': [
+    { name: 'Rabbi Levi Yitzchak of Berditchev', years: '1740–1809',
+      bio: 'One of the most beloved Chassidic masters, known as the "defense attorney" of the Jewish people before G-d. His classic work Kedushat Levi is a foundational Chassidic text. Famous for his unconditional love of every Jew, he would argue passionately on behalf of the simplest Jew before the Heavenly court.',
+      tomb: 'Berdychiv, Ukraine',
+      tehillim: [{l:'ל',n:'Levi',v:'119:89–96'},{l:'י',n:'Yud',v:'119:73–80'},{l:'צ',n:'Tzadik',v:'119:137–144'}] }
+  ],
+  '18-Tishrei': [
+    { name: 'Rabbi Nachman of Breslov', years: '1772–1810',
+      bio: 'Great-grandson of the Baal Shem Tov and founder of the Breslov Chassidic movement. His teachings in Likutey Moharan and stories in Sipurey Maasiyot are among the most profound Chassidic works. Known for "It is a great mitzvah to always be happy."',
+      tomb: 'Uman, Ukraine',
+      tehillim: [{l:'נ',n:'Nun',v:'119:105–112'},{l:'ח',n:'Chet',v:'119:57–64'},{l:'מ',n:'Mem',v:'119:97–104'}] }
+  ],
+
+  // ── CHESHVAN ──
+  '11-Cheshvan': [
+    { name: 'Rachel Imeinu · רָחֵל אִמֵּנוּ', years: 'c. 1553–1506 BCE',
+      bio: 'The beloved wife of Yaakov Avinu and mother of Yosef and Binyamin. Rachel died in childbirth on the road to Bethlehem. Her tomb has been a site of Jewish prayer for millennia — the Midrash says she weeps for her children in exile and G-d promises her they will return. "A voice is heard on high… Rachel weeping for her children" (ירמיהו 31:15).',
+      tomb: 'Kever Rachel, Bethlehem',
+      tehillim: [{l:'ר',n:'Reish',v:'119:153–160'},{l:'ח',n:'Chet',v:'119:57–64'},{l:'ל',n:'Lamed',v:'119:89–96'}] }
+  ],
+  '6-Cheshvan': [
+    { name: 'Rabbi Yitzchak Luria (the Arizal)', years: '1534–1572',
+      bio: 'The holy Ari — founder of Lurianic Kabbalah and the most influential Kabbalist since Rabbi Shimon bar Yochai. In just two years in Tzfat he transformed the world of Jewish mysticism. His teachings, recorded by his disciple Rav Chaim Vital in the Etz Chaim, form the basis of almost all subsequent Kabbalah.',
+      tomb: 'Tzfat (Safed), Israel',
+      tehillim: [{l:'י',n:'Yud',v:'119:73–80'},{l:'צ',n:'Tzadik',v:'119:137–144'},{l:'ח',n:'Chet',v:'119:57–64'},{l:'ק',n:'Kuf',v:'119:145–152'}] }
+  ],
+
+  // ── KISLEV ──
+  '19-Kislev': [
+    { name: 'Yud-Tet Kislev · י״ט כִּסְלֵו — Rosh HaShanah of Chassidus', years: '1798',
+      bio: 'The "New Year of Chassidus." On this day Rabbi Schneur Zalman of Liadi (the Alter Rebbe, author of the Tanya) was released from Czarist imprisonment in St. Petersburg, vindicating Chassidus. It is also the yahrzeit of his teacher, Rabbi Menachem Mendel of Vitebsk (1788), and the birthday of the Mitteler Rebbe. Celebrated by Chabad and many Chassidim with farbrengens and joy.',
+      tomb: 'Alter Rebbe: Haditch, Ukraine', tehillim: [] }
+  ],
+  '25-Kislev': [
+    { name: 'Chanukah — First Night · חֲנֻכָּה', years: '165 BCE – Present',
+      bio: 'The eight-day Festival of Lights begins on 25 Kislev, commemorating the Maccabees\' victory over the Greek-Seleucid empire and the miraculous burning of one day\'s oil for eight days in the rededicated Temple. The mitzvah is to publicize the miracle (pirsumei nissa) by lighting the menorah at the doorway or window.',
+      tomb: 'Tomb of the Maccabees, Modi\'in, Israel', tehillim: [] }
+  ],
+  '14-Kislev': [
+    { name: 'Rabbi Chaim ibn Attar (Or HaChaim HaKadosh)', years: '1696–1743',
+      bio: 'Moroccan-born kabbalist venerated in both Sephardic and Chassidic traditions. His Torah commentary Or HaChaim is considered nearly holy by Chassidic masters, who said the Baal Shem Tov desired to meet him to hasten the Redemption.',
+      tomb: 'Mount of Olives, Jerusalem, Israel',
+      tehillim: [{l:'ח',n:'Chet',v:'119:57–64'},{l:'י',n:'Yud',v:'119:73–80'},{l:'י',n:'Yud',v:'119:73–80'}] }
+  ],
+
+  // ── TEVET ──
+  '10-Tevet': [
+    { name: 'Fast of 10 Tevet · עֲשָׂרָה בְּטֵבֵת', years: '588 BCE',
+      bio: 'Commemorates the beginning of the Babylonian siege of Jerusalem by Nebuchadnezzar, which ultimately led to the destruction of the First Temple. It is a minor fast (dawn to nightfall). In modern Israel it is also designated as a general Kaddish day for Holocaust victims whose yahrzeit is unknown.',
+      tomb: 'Jerusalem', tehillim: [] }
+  ],
+  '20-Tevet': [
+    { name: 'Rabbi Moshe ben Maimon (Rambam / Maimonides)', years: '1138–1204',
+      bio: 'The greatest Jewish philosopher and codifier of the medieval era. His Mishneh Torah systematized the entire corpus of Jewish law; his Guide for the Perplexed reconciled Torah with philosophy. Born in Córdoba, he served as physician to Saladin\'s court in Egypt. His influence on Jewish and Western thought is immeasurable.',
+      tomb: 'Tiberias, Israel',
+      tehillim: [{l:'מ',n:'Mem',v:'119:97–104'},{l:'ש',n:'Shin',v:'119:161–168'},{l:'ה',n:'Hey',v:'119:33–40'}] }
+  ],
+  '24-Tevet': [
+    { name: 'Rabbi Schneur Zalman of Liadi (Alter Rebbe / Ba\'al HaTanya)', years: '1745–1812',
+      bio: 'Founder of Chabad Chassidus and author of the Tanya (Likkutei Amarim) and Shulchan Aruch HaRav. His systematic exposition of Chassidic philosophy made the inner dimension of Torah accessible to every Jew. The Tanya has been called "the written Torah of Chabad Chassidus."',
+      tomb: 'Haditch, Ukraine',
+      tehillim: [{l:'ש',n:'Shin',v:'119:161–168'},{l:'נ',n:'Nun',v:'119:105–112'},{l:'א',n:'Alef',v:'119:1–8'},{l:'ז',n:'Zayin',v:'119:49–56'}] }
+  ],
+
+  // ── SHEVAT ──
+  '5-Shevat': [
+    { name: 'Rabbi Schneur Zalman of Liadi — some observe 5 Shevat', years: '1745–1812',
+      bio: 'Some communities observe the yahrzeit of the Alter Rebbe on 5 Shevat. See also 24 Tevet. He is the founder of Chabad Chassidus and author of the Tanya.',
+      tomb: 'Haditch, Ukraine',
+      tehillim: [{l:'ש',n:'Shin',v:'119:161–168'},{l:'נ',n:'Nun',v:'119:105–112'}] }
+  ],
+  '15-Shevat': [
+    { name: 'Tu B\'Shevat · ט״ו בִּשְׁבָט — New Year of Trees', years: 'Eternal',
+      bio: 'The 15th of Shevat is the Rosh HaShanah for trees (Mishnah Rosh HaShanah). In Kabbalistic tradition it is a day of spiritual renewal — the sap begins rising in the trees of the Land of Israel. The Arizal instituted a Seder for Tu B\'Shevat, eating fruits of the Land of Israel and drinking four cups of wine.',
+      tomb: 'The orchards of Israel', tehillim: [] }
+  ],
+  '22-Shevat': [
+    { name: 'Rebbetzin Chaya Mushka Schneerson', years: '1901–1988',
+      bio: 'The beloved wife of the Lubavitcher Rebbe, Rabbi Menachem Mendel Schneerson. Daughter of the Previous Rebbe, Rabbi Yosef Yitzchak Schneersohn. Known for her exceptional wisdom, refinement, and deep connection to the Chassidic legacy. The Rebbe often spoke of her with profound reverence and said she gave him the ability to serve the Jewish people.',
+      tomb: 'Old Montefiore Cemetery, Queens, New York',
+      tehillim: [{l:'ח',n:'Chet',v:'119:57–64'},{l:'י',n:'Yud',v:'119:73–80'},{l:'ה',n:'Hey',v:'119:33–40'},{l:'מ',n:'Mem',v:'119:97–104'}] }
+  ],
+
+  // ── ADAR ──
+  '7-Adar': [
+    { name: 'Moshe Rabbeinu · מֹשֶׁה רַבֵּנוּ (Moses)', years: 'c. 1393–1273 BCE',
+      bio: 'The greatest prophet of Israel, who led the Jewish people out of Egyptian slavery and received the Torah at Sinai. The 7th of Adar is both his birthday and yahrzeit — he lived exactly 120 years. Observed as a fast day by Chevra Kadisha (burial society) members worldwide.',
+      tomb: 'Mount Nebo, Moab (exact location hidden by Divine will)',
+      tehillim: [{l:'מ',n:'Mem',v:'119:97–104'},{l:'ש',n:'Shin',v:'119:161–168'},{l:'ה',n:'Hey',v:'119:33–40'}] }
+  ],
+  '10-Adar': [
+    { name: 'Rabbi Moshe ben Nachman (Ramban / Nachmanides)', years: '1194–1270',
+      bio: 'Leading Rishon, Talmudist, kabbalist, and Torah commentator. His Torah commentary blends peshat, derash, and Kabbalah in a unique and deeply moving style. He defended Judaism at the Barcelona Disputation of 1263 before King James I of Aragon. He emigrated to the Land of Israel in his final years.',
+      tomb: 'Acre (Akko), Israel',
+      tehillim: [{l:'מ',n:'Mem',v:'119:97–104'},{l:'ש',n:'Shin',v:'119:161–168'},{l:'ה',n:'Hey',v:'119:33–40'},{l:'נ',n:'Nun',v:'119:105–112'}] }
+  ],
+  '13-Adar': [
+    { name: 'Fast of Esther · תַּעֲנִית אֶסְתֵּר', years: '474 BCE',
+      bio: 'Commemorates the fast observed by Esther and all the Jews of Shushan before she approached King Achashverosh unsummoned. Observed on 13 Adar (or moved if it falls on Shabbat). It precedes Purim and recalls the self-sacrifice of Esther in risking her life for her people.',
+      tomb: 'Tomb of Esther and Mordechai, Hamadan, Iran', tehillim: [] },
+    { name: 'Rabbi Yehudah HaChasid (Judah the Pious)', years: '1150–1217',
+      bio: 'Leading Rishon and founder of the Hasidei Ashkenaz movement. His masterwork, Sefer Chassidim, is a landmark text of Jewish ethics and mysticism. He composed Anim Zemirot (Shir HaKavod) sung in synagogues every Shabbat.',
+      tomb: 'Regensburg, Bavaria, Germany',
+      tehillim: [{l:'י',n:'Yud',v:'119:73–80'},{l:'ה',n:'Hey',v:'119:33–40'},{l:'ו',n:'Vav',v:'119:41–48'},{l:'ד',n:'Dalet',v:'119:25–32'}] }
+  ],
+  '13-Adar II': [
+    { name: 'Rabbi Moshe Feinstein (Reb Moshe)', years: '1895–1986',
+      bio: 'The preeminent halachic authority of 20th-century American Jewry, universally regarded as the Posek HaDor. He led Mesivtha Tifereth Jerusalem in Manhattan for decades. His eight-volume Igrot Moshe is cited by Orthodox authorities worldwide.',
+      tomb: 'Mount Judah Cemetery, Queens, New York',
+      tehillim: [{l:'מ',n:'Mem',v:'119:97–104'},{l:'ש',n:'Shin',v:'119:161–168'},{l:'ה',n:'Hey',v:'119:33–40'}] },
+    { name: 'Rabbi Yehudah HaChasid (Judah the Pious)', years: '1150–1217',
+      bio: 'Leading Rishon and founder of the Hasidei Ashkenaz movement. His masterwork, Sefer Chassidim, is a landmark text of Jewish ethics and mysticism still widely studied today.',
+      tomb: 'Regensburg, Bavaria, Germany',
+      tehillim: [{l:'י',n:'Yud',v:'119:73–80'},{l:'ה',n:'Hey',v:'119:33–40'},{l:'ו',n:'Vav',v:'119:41–48'},{l:'ד',n:'Dalet',v:'119:25–32'}] }
+  ],
+  '14-Adar': [
+    { name: 'Purim · פּוּרִים', years: '474 BCE – Present',
+      bio: 'On the 14th of Adar, Jews throughout the Persian Empire celebrated their miraculous salvation from Haman\'s decree. Four mitzvot: reading the Megillah, Mishloach Manot (food gifts), Matanot L\'evyonim (charity), and Seudas Purim (festive meal). "Purim" means "lots" — the lots Haman cast that G-d turned into an eternal day of joy.',
+      tomb: 'Tomb of Esther and Mordechai, Hamadan, Iran',
+      tehillim: [{l:'א',n:'Alef · Esther',v:'119:1–8'},{l:'מ',n:'Mem · Mordechai',v:'119:97–104'}] }
+  ],
+  '15-Adar': [
+    { name: 'Shushan Purim · פּוּרִים דִּמְדִינוֹת', years: '474 BCE – Present',
+      bio: 'Purim as celebrated in Jerusalem and all ancient walled cities. In Shushan the battle continued through the 13th and 14th, so they celebrated on the 15th. Jerusalem observes Purim on 15 Adar with all four mitzvot.',
+      tomb: 'Jerusalem', tehillim: [] },
+    { name: 'Rav Zvi Hirsch Kaidanover', years: 'c. 1648–1712',
+      bio: 'Author of Kav HaYashar — one of the most widely read works of mussar and ethical guidance in the Jewish world. Reb Elimelech of Lizhensk is said to have studied it 102 times. Served as Rav in Vilna and Frankfurt am Main.',
+      tomb: 'Frankfurt am Main, Germany',
+      tehillim: [{l:'צ',n:'Tzadik',v:'119:137–144'},{l:'ה',n:'Hey',v:'119:33–40'},{l:'י',n:'Yud',v:'119:73–80'}] }
+  ],
+  '20-Adar': [
+    { name: 'Rabbi Elimelech of Lizhensk (Noam Elimelech)', years: '1717–1787',
+      bio: 'One of the foremost disciples of the Maggid of Mezeritch and a towering pillar of Polish Chassidus. His work Noam Elimelech defined the role of the Tzaddik as intercessor for the Jewish people. His yahrzeit draws tens of thousands of pilgrims to Lizhensk annually. He is credited with spreading Chassidus throughout Poland and Galicia.',
+      tomb: 'Leżajsk (Lizhensk), Poland',
+      tehillim: [{l:'א',n:'Alef',v:'119:1–8'},{l:'ל',n:'Lamed',v:'119:89–96'},{l:'י',n:'Yud',v:'119:73–80'},{l:'מ',n:'Mem',v:'119:97–104'},{l:'ל',n:'Lamed',v:'119:89–96'},{l:'כ',n:'Kaf',v:'119:81–88'}] }
+  ],
+  '21-Adar': [
+    { name: 'Rabbi Elimelech of Lizhensk — some observe 21 Adar', years: '1717–1787',
+      bio: 'Some sources record the yahrzeit of the Noam Elimelech on 21 Adar. See also 20 Adar. He was among the greatest pillars of Polish Chassidus and author of the Noam Elimelech.',
+      tomb: 'Leżajsk (Lizhensk), Poland',
+      tehillim: [{l:'א',n:'Alef',v:'119:1–8'},{l:'ל',n:'Lamed',v:'119:89–96'},{l:'י',n:'Yud',v:'119:73–80'},{l:'מ',n:'Mem',v:'119:97–104'}] }
+  ],
+  '23-Adar': [
+    { name: 'Rabbi Moshe Chaim Ephraim of Sudilkov (Degel Machaneh Ephraim)', years: '1748–1800',
+      bio: 'Grandson of the Baal Shem Tov and son of Adel (the Besht\'s daughter). A leading second-generation Chassidic master, his work Degel Machaneh Ephraim transmits many teachings of the Besht in the name of his holy grandfather. He served as Rav of Sudilkov (Ukraine).',
+      tomb: 'Sudilkov, Ukraine',
+      tehillim: [{l:'מ',n:'Mem',v:'119:97–104'},{l:'ח',n:'Chet',v:'119:57–64'},{l:'י',n:'Yud',v:'119:73–80'},{l:'א',n:'Alef',v:'119:1–8'}] }
+  ],
+
+  // ── NISAN ──
+  '11-Nisan': [
+    { name: 'Rabbi Menachem Mendel Schneerson (Lubavitcher Rebbe) — Birthday', years: '1902–1994',
+      bio: 'The seventh Lubavitcher Rebbe\'s birthday is 11 Nisan. His yahrzeit is 3 Tammuz. The Rebbe led the worldwide Chabad-Lubavitch movement for over 40 years, transforming Jewish life on every continent. His birthday is celebrated as "Yud Alef Nisan" with joy and increased acts of goodness and kindness.',
+      tomb: 'Old Montefiore Cemetery, Queens, New York', tehillim: [] }
+  ],
+  '13-Nisan': [
+    { name: 'Rabbi Yosef Karo (Maran / Beit Yosef)', years: '1488–1575',
+      bio: 'Author of the Shulchan Aruch, the definitive code of Jewish law. A leader of the 16th-century Tzfat Kabbalistic renaissance and among the most influential halachic authorities in Jewish history. His Beit Yosef commentary on the Tur remains indispensable.',
+      tomb: 'Tzfat (Safed), Israel',
+      tehillim: [{l:'י',n:'Yud',v:'119:73–80'},{l:'ו',n:'Vav',v:'119:41–48'},{l:'ס',n:'Samech',v:'119:113–120'},{l:'פ',n:'Peh',v:'119:129–136'}] }
+  ],
+  '15-Nisan': [
+    { name: 'Pesach — First Night · פֶּסַח', years: '1313 BCE – Present',
+      bio: 'The 15th of Nisan is the first night of Passover — the Seder night. G-d redeemed Israel from 210 years of Egyptian bondage with ten plagues and an outstretched arm. The שמות is the foundation of Jewish faith and identity. "In every generation, each person is obligated to see himself as if he personally left Egypt" (Haggadah).',
+      tomb: 'The Sea of Reeds', tehillim: [] }
+  ],
+  '27-Nisan': [
+    { name: 'Yom HaShoah · יוֹם הַשּׁוֹאָה — Holocaust Remembrance Day', years: '1943',
+      bio: 'Israel\'s official day of Holocaust commemoration, chosen to recall the Warsaw Ghetto Uprising which began on 14 Nisan 5703 (April 19, 1943). Six million Jewish men, women, and children were murdered by the Nazis. A siren sounds throughout Israel for two minutes of silence. "Zachor — Remember."',
+      tomb: 'Yad Vashem, Jerusalem', tehillim: [] }
+  ],
+
+  // ── IYAR ──
+  '14-Iyar': [
+    { name: 'Pesach Sheni · פֶּסַח שֵׁנִי — Second Passover', years: '1312 BCE – Present',
+      bio: 'A second chance to bring the Passover offering, granted to those who were impure or far away on 15 Nisan. The Lubavitcher Rebbe taught that Pesach Sheni\'s message is profound: "It is never too late — there is always a second chance." Some eat matzah on this day.',
+      tomb: 'The Tabernacle in the Desert', tehillim: [] }
+  ],
+  '18-Iyar': [
+    { name: 'Rabbi Shimon bar Yochai (Rashbi) · Lag BaOmer', years: 'c. 100–160 CE',
+      bio: 'Talmudic sage, student of Rabbi Akiva, and traditional author of the Zohar. He hid in a cave for 13 years to escape Roman persecution, emerging transformed by his mystical experiences. Lag BaOmer, his yahrzeit, is celebrated worldwide with bonfires and mass pilgrimage to Meron.',
+      tomb: 'Meron, Galilee, Israel',
+      tehillim: [{l:'ש',n:'Shin',v:'119:161–168'},{l:'י',n:'Yud',v:'119:73–80'},{l:'מ',n:'Mem',v:'119:97–104'},{l:'ו',n:'Vav',v:'119:41–48'},{l:'נ',n:'Nun',v:'119:105–112'}] }
+  ],
+
+  // ── SIVAN ──
+  '6-Sivan': [
+    { name: 'Shavuot · שָׁבוּעוֹת — Giving of the Torah', years: '1313 BCE – Present',
+      bio: 'The festival of the Giving of the Torah at Mount Sinai. Celebrated 50 days after Pesach, it is also called Chag HaBikkurim (Festival of First Fruits). The custom is to stay up all night learning Torah (Tikkun Leil Shavuot). The Book of Ruth is read, as it occurred at harvest time and Ruth accepted the Torah upon herself.',
+      tomb: 'Mount Sinai', tehillim: [] }
+  ],
+
+  // ── TAMMUZ ──
+  '3-Tammuz': [
+    { name: 'Rabbi Menachem Mendel Schneerson (Lubavitcher Rebbe)', years: '1902–1994',
+      bio: 'The seventh Lubavitcher Rebbe — the most influential Jewish leader of the 20th century. For over 40 years he led Chabad-Lubavitch, sending shluchim (emissaries) to every corner of the world. He transformed the landscape of world Jewry through outreach, education, and an unshakeable belief in every Jew\'s infinite worth. He is widely referred to simply as "the Rebbe."',
+      tomb: 'Old Montefiore Cemetery (Ohel), Queens, New York',
+      tehillim: [{l:'מ',n:'Mem',v:'119:97–104'},{l:'נ',n:'Nun',v:'119:105–112'},{l:'ח',n:'Chet',v:'119:57–64'},{l:'מ',n:'Mem',v:'119:97–104'},{l:'ל',n:'Lamed',v:'119:89–96'}] }
+  ],
+  '17-Tammuz': [
+    { name: 'Fast of 17 Tammuz · שִׁבְעָה עָשָׂר בְּתַמּוּז', years: '586 BCE',
+      bio: 'Marks five tragedies that befell Israel on this date: Moses broke the first tablets; the daily offering ceased in the First Temple; Jerusalem\'s walls were breached; Apostomos burned a Torah scroll; and an idol was placed in the Temple. It begins the Three Weeks of mourning culminating in Tisha B\'Av. A minor fast (dawn to nightfall).',
+      tomb: 'Jerusalem', tehillim: [] }
+  ],
+
+  // ── AV ──
+  '9-Av': [
+    { name: 'Tisha B\'Av · תִּשְׁעָה בְּאָב — Day of Mourning', years: '586 BCE – Present',
+      bio: 'The saddest day of the Jewish year — the 9th of Av witnessed the destruction of both the First and Second Temples, the sin of the spies, the fall of Beitar, and the plowing of Jerusalem. Jews fast for 25 hours, sit on low chairs, and recite Lamentations (Eicha). It is a day of national mourning for all Jewish tragedies across history.',
+      tomb: 'The ruins of the Temple Mount, Jerusalem', tehillim: [] }
+  ],
+  '20-Av': [
+    { name: 'Rabbi Levi Yitzchak of Berditchev (some say 20 Av)', years: '1740–1809',
+      bio: 'The great defender of Israel before G-d. Known for seeing only the good in every Jew. His Kedushat Levi remains a treasured Chassidic classic. Some sources record his yahrzeit as 25 Tishrei; others list 20 Av.',
+      tomb: 'Berdychiv, Ukraine',
+      tehillim: [{l:'ל',n:'Lamed',v:'119:89–96'},{l:'י',n:'Yud',v:'119:73–80'},{l:'צ',n:'Tzadik',v:'119:137–144'}] }
+  ],
+
+  // ── ELUL ──
+  '18-Elul': [
+    { name: 'Chai Elul · י״ח אֱלוּל — Birthday of the Baal Shem Tov & Alter Rebbe', years: '1698 / 1745',
+      bio: '18 Elul (Chai Elul — "life of Elul") is the birthday of both Rabbi Yisrael Baal Shem Tov (1698), founder of Chassidus, and Rabbi Schneur Zalman of Liadi (1745), founder of Chabad. The Alter Rebbe said that Chai Elul infuses life (chai) into the month of Elul and its preparation for the High Holidays. Celebrated with farbrengens and added vitality in Torah study.',
+      tomb: 'Besht: Medzhybizh, Ukraine · Alter Rebbe: Haditch, Ukraine', tehillim: [] }
+  ],
+};
+function getYahrzeitsForDate(day, month){ return YAHRZEIT_TABLE[day+'-'+month]||[]; }
+
+// ── Shabbat Time Helpers ──────────────────────────────────────────────────────
+function getNextFriday(from){
+  const d=new Date(from),day=d.getDay(),daysToFri=(5-day+7)%7;
+  // If today is Friday, use today (daysToFri===0), else advance
+  d.setDate(d.getDate()+daysToFri); d.setHours(12,0,0,0); return d;
+}
+function getNextSaturday(from){
+  const fri=getNextFriday(from),sat=new Date(fri); sat.setDate(fri.getDate()+1); return sat;
+}
+
+// ── City Name via API ─────────────────────────────────────────────────────────
+async function fetchLocationInfo(lat,lon){
+  // Browser's own timezone — instant, no API needed
+  const timeZone=Intl.DateTimeFormat().resolvedOptions().timeZone||null;
+  // BigDataCloud reverse geocode — CORS-friendly, works from file://
+  try{
+    const r=await fetch(
+      `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}&localityLanguage=en`
+    );
+    const d=await r.json();
+    const city=d.city||d.locality||d.principalSubdivision||'';
+    const country=d.countryName||'';
+    const name=city&&country?`${city}, ${country}`:city||country||null;
+    return {name, timeZone};
+  }catch(e){
+    return {name:null, timeZone};
+  }
+}
+
+// ── Clock ─────────────────────────────────────────────────────────────────────
+function tickClock(){
+  const now=new Date();
+  let h=now.getHours(),m=String(now.getMinutes()).padStart(2,'0');
+  const ap=h>=12?'PM':'AM'; h=h%12||12;
+  document.getElementById('statusTime').childNodes[0].textContent=`${h}:${m}`;
+  document.getElementById('statusAmpm').textContent=ap;
+}
+tickClock(); setInterval(tickClock,1000);
+
+// ── Main Render ───────────────────────────────────────────────────────────────
+function renderTehillim(tehillimList) {
+  if (!tehillimList || !tehillimList.length) return '';
+  const blocks = tehillimList.map(t => {
+    const match = t.v.match(/(\d+):(\d+)[–-](\d+)/);
+    if (!match) return '';
+    const start = parseInt(match[2]), end = parseInt(match[3]);
+    const verses = [];
+    for (let v = start; v <= end; v++) {
+      const entry = PSALM119[v];
+      if (entry) verses.push(
+        '<div class="t-verse">' +
+        '<span class="t-verse-num">' + v + '</span>' +
+        '<div class="t-verse-body">' +
+        '<div class="t-verse-heb">' + entry[0] + '</div>' +
+        '<div class="t-verse-eng">' + entry[1] + '</div>' +
+        '</div></div>'
+      );
+    }
+    return '<div class="t-block">' +
+      '<div class="t-block-header">' +
+      '<span class="t-block-heb">' + t.l + '</span>' +
+      '<div class="t-block-meta">' +
+      '<div class="t-block-name">' + t.n + '</div>' +
+      '<div class="t-block-ref">Psalm · תהילים ' + t.v + '</div>' +
+      '</div></div>' +
+      '<div class="t-block-verses">' + verses.join('') + '</div>' +
+      '</div>';
+  }).join('');
+  return '<div class="tehillim-section">' +
+    '<div class="tehillim-label">תהילים · Tehillim — Psalm 119 · תהילים קי"ט לפי שם</div>' +
+    '<div class="tehillim-blocks">' + blocks + '</div>' +
+    '</div>';
+}
+
+// ── NerTzaddik live fetch ──────────────────────────────────────────────────────
+async function fetchNerTzaddik() {
+  const target = 'https://nertzaddik.com/home/';
+  // Try multiple CORS proxies in order
+  const proxies = [
+    u => `https://api.allorigins.win/get?url=${encodeURIComponent(u)}`,
+    u => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`,
+  ];
+  let html = null;
+  for (const makeUrl of proxies) {
+    try {
+      const res = await fetch(makeUrl(target), { signal: AbortSignal.timeout(6000) });
+      if (!res.ok) continue;
+      const ct = res.headers.get('content-type') || '';
+      // allorigins wraps in JSON; codetabs returns raw
+      if (ct.includes('json')) {
+        const data = await res.json();
+        html = data.contents || data.html || null;
+      } else {
+        html = await res.text();
+      }
+      if (html && html.includes('tzadik-info')) break;
+      html = null;
+    } catch(e) { continue; }
+  }
+  if (!html) return null;
+  try {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const items = [];
+    doc.querySelectorAll('h4 a[href*="tzadik-info"]').forEach(a => {
+      const href = a.getAttribute('href') || '';
+      const idMatch = href.match(/id=(\d+)/);
+      if (!idMatch) return;
+      const id = idMatch[1];
+      const name = a.textContent.trim();
+      if (!name) return;
+      // Walk sibling/parent nodes for knownAs and date
+      const container = a.closest('div') || a.parentElement?.parentElement;
+      let knownAs = '', date = '';
+      if (container) {
+        container.querySelectorAll('p, strong, b').forEach(el => {
+          const t = el.textContent.trim();
+          if (t.startsWith('Known As:')) knownAs = t.replace('Known As:', '').trim();
+          if (/^(Nisan|Iyar|Sivan|Tammuz|Av|Elul|Tishrei|Cheshvan|Kislev|Tevet|Shevat|Adar)\s+\d/.test(t)) date = t;
+        });
+        // Also check plain text nodes for the date
+        container.childNodes.forEach(n => {
+          if (n.nodeType === 3) {
+            const t = n.textContent.trim();
+            if (/^(Nisan|Iyar|Sivan|Tammuz|Av|Elul|Tishrei|Cheshvan|Kislev|Tevet|Shevat|Adar)\s+\d/.test(t)) date = t;
+          }
+        });
+      }
+      items.push({ id, name, knownAs, date });
+    });
+    return items.length ? items : null;
+  } catch(e) { return null; }
+}
+
+function renderDate(lat, lon) {
+  const now = new Date();
+  const y=now.getFullYear(),m=now.getMonth()+1,d=now.getDate();
+  document.getElementById('gregDate').textContent =
+    now.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+
+  const ss=sunsetUTC(lat,lon,now), past=ss&&now>=ss;
+  let jdn=toJDN(y,m,d); if(!past)jdn-=1;
+  const heb=jdnToHeb(jdn), mi=heb.month-1;
+
+  document.getElementById('hebDate').textContent =
+    `${toHNum(heb.day)} ${HM_HE[mi]} ${toHNum(heb.year%1000)}`;
+  document.getElementById('hebTranslit').textContent =
+    `${heb.day} ${HM_EN[mi]}, ${heb.year}`;
+
+  if(ss){
+    const st=ss.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+    document.getElementById('sunsetBadge').innerHTML =
+      `<span class="sunset-chip">${past?'🌙 After Sunset · אחרי שקיעה':'☀ Sunset · שקיעה '+st}</span>`;
+  }
+
+  // Day tiles
+  const dayNames=[['Sun','א׳'],['Mon','ב׳'],['Tue','ג׳'],['Wed','ד׳'],['Thu','ה׳'],['Fri','ו׳'],['Sat','שבת']];
+  const dayNum=now.getDay(), daysToSat=(6-dayNum+7)%7;
+  document.getElementById('dayRow').innerHTML = `
+    <div class="day-tile">
+      <div class="day-tile-num">${dayNames[dayNum][0]}<br><span style="font-size:.75em;opacity:.7;">${dayNames[dayNum][1]}</span></div>
+      <div class="day-tile-label">Day · יום</div>
+    </div>
+    <div class="day-tile">
+      <div class="day-tile-num">${heb.day}</div>
+      <div class="day-tile-label">Hebrew · עברי</div>
+    </div>
+    <div class="day-tile">
+      <div class="day-tile-num">${daysToSat===0?'🕯️':''+daysToSat}</div>
+      <div class="day-tile-label">${daysToSat===0?'Shabbat · שבת':'To Shabbat · לשבת'}</div>
+    </div>`;
+
+  // Yahrzeits — label set immediately
+  document.getElementById('yahrzeitDateLabel').textContent =
+    `Yahrzeits · יארצייטים — ${heb.day} ${HM_EN[mi]} · ${heb.day} ${HM_HE[mi]}`;
+  document.getElementById('yahrzeitContent').innerHTML =
+    '<div class="shimmer no-ytz">Loading · טוען מ-NerTzaddik…</div>';
+
+  // Fetch live from NerTzaddik (their home page renders server-side)
+  fetchNerTzaddik().then(ntList => {
+    const yList = getYahrzeitsForDate(heb.day, HM_EN[mi]);
+    if (ntList && ntList.length) {
+      // Render NerTzaddik live data
+      document.getElementById('yahrzeitContent').innerHTML =
+        ntList.map(r => `
+          <div class="ytz-item">
+            <div class="ytz-name">${r.name}</div>
+            ${r.knownAs ? `<div class="ytz-years">${r.knownAs}</div>` : ''}
+            ${r.date ? `<div class="ytz-tomb"><span class="ytz-tomb-icon">📅</span>${r.date}</div>` : ''}
+            <a href="https://nertzaddik.com/tzadik-info?id=${r.id}" target="_blank" rel="noopener"
+               style="display:inline-block;margin-top:.4rem;font-size:.62rem;color:var(--gold);text-decoration:none;border:1px solid rgba(201,168,76,.35);padding:.2rem .55rem;border-radius:10px;">
+              Full Profile &amp; Tehillim · פרופיל מלא ותהילים ←
+            </a>
+          </div>`).join('') +
+        `<div class="ytz-footer">יהי זכרם ברוך · May their memory be blessed</div>`;
+    } else {
+      // Fallback to local table
+      if (!yList.length) {
+        document.getElementById('yahrzeitContent').innerHTML =
+          '<div class="no-ytz">No yahrzeits recorded for this date · אין יארצייטים רשומים לתאריך זה</div>';
+      } else {
+        document.getElementById('yahrzeitContent').innerHTML =
+          yList.map(r => `
+            <div class="ytz-item">
+              <div class="ytz-name">${r.name}</div>
+              <div class="ytz-years">${r.years}</div>
+              <div class="ytz-bio">${r.bio}</div>
+              <div class="ytz-tomb"><span class="ytz-tomb-icon">✦</span>${r.tomb||'Unknown'}</div>
+              ${renderTehillim(r.tehillim)}
+            </div>`).join('') +
+          `<div class="ytz-footer">יהי זכרם ברוך · May their memory be blessed</div>`;
+      }
+    }
+  });
+
+  return { heb, mi };
+}
+
+function renderShabbat(lat, lon, timeZone) {
+  const now=new Date();
+  const fri=getNextFriday(now), sat=getNextSaturday(now);
+  const friSunset=sunsetUTC(lat,lon,fri), satSunset=sunsetUTC(lat,lon,sat);
+  if(!friSunset||!satSunset) return;
+
+  const candles=new Date(friSunset.getTime()-18*60000);  // 18 min before sunset
+  const havdalah=sunAtAngle(lat,lon,sat,8.5);            // Tzeit: 3 stars, 8.5° below horizon
+  const rt=sunAtAngle(lat,lon,sat,16.1);                 // Rabbeinu Tam: ~16.1° below horizon
+
+  const tz=timeZone||Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const fmt=d=>new Intl.DateTimeFormat('en-US',{hour:'numeric',minute:'2-digit',timeZone:tz}).format(d);
+  const fmtDay=d=>new Intl.DateTimeFormat('en-US',{weekday:'long',month:'long',day:'numeric',timeZone:tz}).format(d);
+
+  document.getElementById('candleTime').textContent=fmt(candles);
+  document.getElementById('candleDay').textContent=fmtDay(fri);
+  document.getElementById('havdalahTime').textContent=fmt(havdalah);
+  document.getElementById('havdalahDay').textContent=fmtDay(sat);
+  document.getElementById('rtTime').textContent=fmt(rt);
+  document.getElementById('rtDay').textContent=fmtDay(sat);
+}
+
+function renderParasha(){
+  const p=getOfflineParasha();
+  if(!p){
+    document.getElementById('parashaContent').innerHTML=
+      '<div class="no-ytz">Yom Tov this Shabbat · יום טוב השבת</div>';
+    return;
+  }
+  document.getElementById('parashaContent').innerHTML=`
+    <div class="parasha-name-big">${p.name}</div>
+    <div class="parasha-heb-big">${p.hebrew}</div>
+    <div class="reading-list">
+      <div class="reading-item">
+        <span class="reading-key">Torah · תורה</span>
+        <span class="reading-val">${p.torah}</span>
+      </div>
+      <div class="reading-item">
+        <span class="reading-key">Haftarah · הפטרה</span>
+        <span class="reading-val">${p.haftarah}</span>
+      </div>
+    </div>`;
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+async function init(){
+  const DEFAULT_LAT=32.0853, DEFAULT_LON=34.7818;
+  const DEFAULT_CITY='Tel Aviv, Israel';
+
+  // Step 1: Render immediately using browser timezone — no waiting
+  const browserTZ=Intl.DateTimeFormat().resolvedOptions().timeZone||'Asia/Jerusalem';
+  renderDate(DEFAULT_LAT,DEFAULT_LON);
+  renderShabbat(DEFAULT_LAT,DEFAULT_LON,browserTZ);
+  renderParasha();
+
+  // Step 2: Ask for GPS — if granted, refine everything; if denied, show default city
+  if(!navigator.geolocation){
+    document.getElementById('statusCity').textContent=DEFAULT_CITY;
+    document.getElementById('locationInfo').textContent=DEFAULT_CITY;
+    return;
+  }
+
+  navigator.geolocation.getCurrentPosition(
+    async p=>{
+      const {latitude:lat,longitude:lon}=p.coords;
+      renderDate(lat,lon);
+      renderShabbat(lat,lon,browserTZ);
+      // Fetch city name in background
+      const {name}=await fetchLocationInfo(lat,lon);
+      if(name){
+        document.getElementById('statusCity').textContent=name;
+        document.getElementById('locationInfo').textContent=name;
+      } else {
+        document.getElementById('statusCity').textContent=DEFAULT_CITY;
+        document.getElementById('locationInfo').textContent=DEFAULT_CITY;
+      }
+    },
+    ()=>{
+      // GPS denied — just show default city
+      document.getElementById('statusCity').textContent=DEFAULT_CITY;
+      document.getElementById('locationInfo').textContent=DEFAULT_CITY;
+    },
+    {timeout:8000,maximumAge:300000,enableHighAccuracy:false}
+  );
+}
+
+init();
+
+// ── Shop ──────────────────────────────────────────────────────────────────────
+
+const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQtJl7ODn5IZUOTXH3gNsFd3IJhimUl-dyduuEKl1I7Ijh2mBdcnTyXhE94olGoMPar6NxX3JBQh5lj/pub?gid=0&single=true&output=csv';
+
+const DEMO_PRODUCTS = [
+  { id:1, name:'Shabbat Candles',        name_heb:'נרות שבת',         description:'Classic Shabbat candles',               price_ils:35,  price_usd:10,  stock:5,  emoji:'🕯️', image_url:'' },
+  { id:2, name:'Shabbat Candles 10 Pack',name_heb:'נרות שבת 10 יח׳',  description:'Box of 10 Shabbat candles',              price_ils:25,  price_usd:8,   stock:4,  emoji:'🕯️', image_url:'' },
+  { id:3, name:'Havdalah Candle',        name_heb:'נר הבדלה',         description:'Braided Havdalah candle',                price_ils:25,  price_usd:8,   stock:10, emoji:'🕎', image_url:'' },
+  { id:4, name:'Kiddush Wine',           name_heb:'יין קידוש',        description:'Kosher Kiddush wine',                    price_ils:40,  price_usd:12,  stock:20, emoji:'🍷', image_url:'' },
+  { id:5, name:'Besamim',               name_heb:'בשמים',            description:'Spices for Havdalah · בשמים להבדלה',    price_ils:20,  price_usd:7,   stock:25, emoji:'🌿', image_url:'' },
+];
+
+let shopProducts = [];
+let cart = {};
+let activeCurrency = 'ILS';
+
+const CURRENCY_SYMBOLS = { ILS: '₪', USD: '$' };
+const CURRENCY_KEYS    = { ILS: 'price_ils', USD: 'price_usd' };
+
+function setCurrency(cur) {
+  activeCurrency = cur;
+  document.querySelectorAll('.cur-btn').forEach(b => b.classList.toggle('active', b.textContent.includes(cur)));
+  renderShopGrid();
+  renderCartModal();
+}
+
+async function parseCSV(text) {
+  const lines = text.trim().split('\n').filter(l => l.trim());
+  if (lines.length < 2) return [];
+  const headers = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, '').toLowerCase().replace(/ /g,'_'));
+  return lines.slice(1).map((line, i) => {
+    const vals = line.match(/(".*?"|[^,]+)(?=,|$)/g) || line.split(',');
+    const obj = { id: i + 1 };
+    headers.forEach((h, idx) => {
+      let v = (vals[idx] || '').trim().replace(/^"|"$/g, '');
+      obj[h] = isNaN(v) || v === '' ? v : parseFloat(v);
+    });
+    return obj;
+  }).filter(p => p.name && String(p.name).trim() !== '');
+}
+
+async function loadShopProducts() {
+  if (!SHEET_CSV_URL) { shopProducts = DEMO_PRODUCTS; renderShopGrid(); return; }
+  try {
+    const proxies = [
+      `https://api.allorigins.win/get?url=${encodeURIComponent(SHEET_CSV_URL)}`,
+      `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(SHEET_CSV_URL)}`
+    ];
+    let text = null;
+    for (const proxy of proxies) {
+      try {
+        const r = await fetch(proxy);
+        const j = await r.json();
+        text = j.contents || j;
+        if (text && typeof text === 'string' && text.includes(',')) break;
+      } catch(_) {}
+    }
+    shopProducts = text ? await parseCSV(text) : DEMO_PRODUCTS;
+  } catch(_) { shopProducts = DEMO_PRODUCTS; }
+  renderShopGrid();
+}
+
+function productPrice(p) {
+  const key = CURRENCY_KEYS[activeCurrency];
+  const sym = CURRENCY_SYMBOLS[activeCurrency];
+  const val = parseFloat(p[key]);
+  return isNaN(val) ? '—' : `${sym}${val.toFixed(2)}`;
+}
+
+function renderShopGrid() {
+  const grid = document.getElementById('shopGrid');
+  if (!shopProducts.length) { grid.innerHTML = '<div class="shimmer shop-loading">No products found · לא נמצאו מוצרים</div>'; return; }
+  grid.innerHTML = shopProducts.map(p => {
+    const inStock = !p.stock || parseFloat(p.stock) > 0;
+    const imgHtml = p.image_url
+      ? `<div class="product-img"><img src="${p.image_url}" alt="${p.name}" onerror="this.parentElement.innerHTML='${p.emoji||'🕯️'}'"></div>`
+      : `<div class="product-img">${p.emoji || '🕯️'}</div>`;
+    return `<div class="product-card">
+      ${imgHtml}
+      <div class="product-body">
+        <div class="product-name">${p.name||''}</div>
+        <div class="product-name-heb">${p.name_heb||''}</div>
+        <div class="product-desc">${p.description||''}</div>
+        <div class="product-footer">
+          <span class="product-price">${productPrice(p)}</span>
+          <span class="product-stock${inStock?'':' out'}">${inStock ? 'In stock · במלאי' : 'Out · אזל'}</span>
+        </div>
+        <button class="add-to-cart-btn" ${inStock?'':'disabled'} onclick="addToCart(${p.id})">
+          Add to Cart · הוסף לעגלה
+        </button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── Cart Logic ────────────────────────────────────────────────────────────────
+
+function cartTotalQty() {
+  return Object.values(cart).reduce((a, b) => a + b, 0);
+}
+
+function cartTotalPrice() {
+  const key = CURRENCY_KEYS[activeCurrency];
+  let total = 0;
+  Object.keys(cart).forEach(id => {
+    const p = shopProducts.find(x => x.id == id);
+    if (p) total += (parseFloat(p[key]) || 0) * cart[id];
+  });
+  return total;
+}
+
+function addToCart(id) {
+  cart[id] = (cart[id] || 0) + 1;
+  updateFloatingCart();
+  // Brief flash on button
+  const tab = document.getElementById('tab-shop');
+  tab.style.color = 'var(--gold)';
+  setTimeout(() => tab.style.color = '', 500);
+}
+
+function changeModalQty(id, delta) {
+  cart[id] = (cart[id] || 0) + delta;
+  if (cart[id] <= 0) delete cart[id];
+  updateFloatingCart();
+  renderCartModal();
+  if (!cartTotalQty()) closeCartModal();
+}
+
+function clearCartAndClose() {
+  cart = {};
+  updateFloatingCart();
+  closeCartModal();
+}
+
+function updateFloatingCart() {
+  const qty = cartTotalQty();
+  const btn = document.getElementById('floatCartBtn');
+  const count = document.getElementById('floatCartCount');
+  count.textContent = qty;
+  btn.classList.toggle('visible', qty > 0);
+}
+
+function renderCartModal() {
+  const sym = CURRENCY_SYMBOLS[activeCurrency];
+  const key = CURRENCY_KEYS[activeCurrency];
+  const ids = Object.keys(cart);
+  let total = 0;
+
+  document.getElementById('modalCartItems').innerHTML = ids.map(id => {
+    const p = shopProducts.find(x => x.id == id);
+    if (!p) return '';
+    const qty = cart[id];
+    const price = parseFloat(p[key]) || 0;
+    total += price * qty;
+    return `<div class="modal-cart-item">
+      <div class="modal-item-emoji">${p.emoji || '🕯️'}</div>
+      <div class="modal-item-body">
+        <div class="modal-item-name">${p.name}</div>
+        <div class="modal-item-heb">${p.name_heb||''}</div>
+      </div>
+      <div class="modal-item-controls">
+        <button class="modal-qty-btn" onclick="changeModalQty(${id},-1)">−</button>
+        <span class="modal-item-qty">${qty}</span>
+        <button class="modal-qty-btn" onclick="changeModalQty(${id},1)">+</button>
+      </div>
+      <span class="modal-item-price">${sym}${(price*qty).toFixed(2)}</span>
+    </div>`;
+  }).join('');
+
+  document.getElementById('modalCartTotal').textContent = `${sym}${total.toFixed(2)}`;
+}
+
+// ── Cart Modal Open/Close ─────────────────────────────────────────────────────
+
+function resetAfterOrder(tabName) {
+  closeCartModal();
+  cart = {};
+  updateFloatingCart();
+  document.getElementById('cartModal').style.display = '';
+  document.getElementById('cartSuccess').classList.remove('show');
+  ['custFirst','custLast','custEmail','custPhone','custAddr1','custAddr2','custNote'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.value = '';
+  });
+  switchTab(tabName || 'date');
+}
+function goHomeAfterOrder() { resetAfterOrder('date'); }
+
+function openCartModal() {
+  renderCartModal();
+  document.getElementById('cartModalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCartModal() {
+  document.getElementById('cartModalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function handleOverlayClick(e) {
+  if (e.target === document.getElementById('cartModalOverlay')) closeCartModal();
+}
+
+// ── Order Submission ──────────────────────────────────────────────────────────
+// Paste your deployed Apps Script URL here after setup:
+// ── SheetDB config ────────────────────────────────────────────────────────────
+const SHEETDB_URL = 'https://sheetdb.io/api/v1/y9ubmrdjhx728';
+
+// Generate order number: ORD-YYYYMMDD-XXXX
+function generateOrderNumber() {
+  const now = new Date();
+  const date = now.getFullYear().toString() +
+    String(now.getMonth()+1).padStart(2,'0') +
+    String(now.getDate()).padStart(2,'0');
+  const rand = Math.floor(1000 + Math.random() * 9000);
+  return `ORD-${date}-${rand}`;
+}
+
+async function submitOrder() {
+  const first  = document.getElementById('custFirst').value.trim();
+  const last   = document.getElementById('custLast').value.trim();
+  const email  = document.getElementById('custEmail').value.trim();
+  const phone  = document.getElementById('custPhone').value.trim();
+  const addr1  = document.getElementById('custAddr1').value.trim();
+  const addr2  = document.getElementById('custAddr2').value.trim();
+  const note   = document.getElementById('custNote').value.trim();
+
+  // Validate
+  let valid = true;
+  const setErr = (id, errId, show) => {
+    document.getElementById(id).classList.toggle('field-error', show);
+    const el = document.getElementById(errId);
+    if (el) el.classList.toggle('show', show);
+    if (show) valid = false;
+  };
+  setErr('custFirst', 'errFirst', !first);
+  setErr('custLast',  'errLast',  !last);
+  setErr('custEmail', 'errEmail', !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email));
+  setErr('custPhone', 'errPhone', !phone);
+  setErr('custAddr1', 'errAddr',  !addr1);
+  if (!valid) return;
+
+  // Disable button while processing
+  const btn = document.getElementById('modalCheckoutBtn');
+  btn.disabled = true;
+  btn.textContent = 'Sending… · שולח…';
+
+  const sym  = CURRENCY_SYMBOLS[activeCurrency];
+  const key  = CURRENCY_KEYS[activeCurrency];
+  const ids  = Object.keys(cart);
+  const orderNumber = generateOrderNumber();
+  const orderDate = new Date().toLocaleString('en-GB', { dateStyle:'full', timeStyle:'short' });
+
+  // Build items list
+  let itemsForSheet = [];
+  let total = 0;
+  ids.forEach(id => {
+    const p = shopProducts.find(x => x.id == id);
+    if (!p) return;
+    const qty   = cart[id];
+    const price = parseFloat(p[key]) || 0;
+    total += price * qty;
+    itemsForSheet.push(`${p.name} ×${qty}`);
+  });
+
+  // ── 1. Save to Google Sheet via SheetDB ──────────────────────────────────
+  try {
+    const response = await fetch(SHEETDB_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        data: {
+          'Order #':    orderNumber,
+          'Date':       orderDate,
+          'Status':     'New',
+          'First Name': first,
+          'Last Name':  last,
+          'Email':      email,
+          'Phone':      phone,
+          'Address':    `${addr1}${addr2 ? ', ' + addr2 : ''}`,
+          'Items':      itemsForSheet.join(' | '),
+          'Total':      `${sym}${total.toFixed(2)}`,
+          'Currency':   activeCurrency,
+          'Note':       note || ''
+        }
+      })
+    });
+    if (!response.ok) {
+      const err = await response.text();
+      console.warn('SheetDB error:', err);
+    }
+  } catch(e) {
+    console.warn('SheetDB save failed:', e);
+  }
+
+  // Show order number on success screen
+  const onEl = document.getElementById('successOrderNum');
+  if (onEl) onEl.textContent = orderNumber;
+
+  btn.disabled = false;
+  btn.textContent = '✉ Send Order · שלח הזמנה';
+  document.getElementById('cartModal').style.display = 'none';
+  document.getElementById('cartSuccess').classList.add('show');
+}
+
+
+</script>
+</body>
+</html>
